@@ -11,7 +11,7 @@
  $headers  = 'MIME-Version: 1.0' . "\r\n";
  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
  $headers .= "From: ".$email_from."\r\n";
- $message="	  <a href="../apollo.html">Shop Homepage - Start Bootstrap Template</a>
+ $message="	  
  	   
  		 Name:
 		 $name 	   

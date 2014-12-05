@@ -2,6 +2,26 @@
 <html lang="en"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
+
+<!--
+
+* Author: Thomas Delaney
+* Assignment: Minor Project
+–
+PROJECT NAME 
+* Apollo Team -- How to make people smarter when it comes to climate change.
+* Student ID: D14126353
+* Date : 2014/11/20
+* Ref: 
+Bootstrap 3 framework avaialble at  http://getbootstrap.com/
+based on a free template available from http://startbootstrap.com/template-overviews/shop-homepage/
+Added plugins include --
+Blueimp image gallery  https://blueimp.github.io/Bootstrap-Image-Gallery/
+
+Built using Dreamweaver cs6
+The shop starter template was converted to a Dreamweaver template ( Templates/template.dwt )
+-->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
