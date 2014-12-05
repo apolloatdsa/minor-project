@@ -55,7 +55,7 @@ body {
 footer {
     margin: 50px 0;
 }
-<!-- #########################################################-->
+ #########################################################
 
 
 }
@@ -180,6 +180,21 @@ footer {
 .bs-docs-footer-links li:first-child{
 	padding-left:0
 }
+well.well-lg .survey-question  {
+	width: 250px;
+	border-radius: 10px;
+	height: 40px;
+}
+.col-md-12.dwd-col .well.well-lg .survey-question {
+	width: 423px;
+	border-radius: 10px;
+	border-color: #020202;
+	background-color: #E9191D;
+}
+
+
+
+
 
 @media (min-width:768px){
 	.bs-docs-footer p{
@@ -1736,4 +1751,57 @@ h1[id]{
 
 .css .o,.css .o+.nt,.css .nt+.nt{
 	color:#999
+}
+.test {
+	width: 297px;
+}
+.style {
+}
+.inputbox {
+	width: 200px;
+	border-color: #000000;
+	border-style: solid;
+	border-radius: 9px;
+	margin-left: 50px;
+}
+.survet-info {
+	color: #FF0004;
+	bottom: auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.inputstyle {
+	font-size: 30px;
+	color: #4781DB;
+	vertical-align: middle;
+}
+.input-info {
+	color: #008600;
+	font-size: 28px;
+	vertical-align: middle;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+.question-box {
+	text-align: left;
+	word-spacing: normal;
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.more-info {
+	vertical-align: middle;
+}
+
+
+.question-li {
+	background-color: #E91518;
+	
+	
+}
+.well-li {
 }

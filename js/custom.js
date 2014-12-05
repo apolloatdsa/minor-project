@@ -1,3 +1,11 @@
+//Code reuse
+// Ref: http://www.site.com/page#ref
+// Ref: Book Title, Author, Publisher, Edition, page number
+
+// Ref: Code provided by lab assistant: name or fellow participant: 
+
+
+
 // JavaScript Document
 
 // carbon meter
@@ -5,11 +13,11 @@
  								
 								
 								
-								function setM(v){ //v is a value supplied by the calling function -- a variable called meter 
+								function setM(v){ //v is a value supplied by the calling function -- a variable called meter (0 - 15)
 									
 									document.getElementById('carbonM').meterValue.value = v; // take the value of v and write it to the number input
 									document.getElementById('carbonM').range.value = v; // take the value of v and write it to the slider input
-									document.getElementById("meter").src = "img/"+v+"-meter.jpg"; // change the image
+									document.getElementById("meter").src = "img/"+v+"-meter.jpg"; // change the image to show position (0 - 15)
 									
 									
 									};
