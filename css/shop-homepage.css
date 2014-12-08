@@ -191,6 +191,18 @@ well.well-lg .survey-question  {
 	border-color: #020202;
 	background-color: #E9191D;
 }
+.row .row .col-sm-4.testblock.dwd-col {
+	width: 76%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #C34A4C;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	border: thick solid #000000;
+}
+
 
 
 
@@ -1759,7 +1771,7 @@ h1[id]{
 }
 .inputbox {
 	width: 200px;
-	border-color: #000000;
+	border-color: #ADADAD;
 	border-style: solid;
 	border-radius: 9px;
 	margin-left: 50px;
@@ -1804,4 +1816,25 @@ h1[id]{
 	
 }
 .well-li {
+}
+.newblock {
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #D9D9D9;
+	border-radius: 21px;
+	border: thin solid #554646;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	left: 0%;
+	margin-top: 11px;
+	margin-bottom: 5px;
+}
+.editable-region {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 }
