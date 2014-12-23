@@ -213,31 +213,39 @@ well.well-lg .survey-question  {
 	padding-left: 5px;
 	font-size: large;
 }
-.row .panel.panel-custom.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox .panel-body-custom {
-	background-color: #09558C;
+.nav.navbar-nav.navbar-right li #logged-in-user {
+	margin-top: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	color: #FFFFFF;
+	font-size: medium;
+}
+.row .panel.panel-custom.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .panel-heading-custom {
+	background-color: #EDEDED;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 	padding-top: 5px;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	padding-left: 5px;
-	font-size: large;
+	color: #008CCD;
+	border-top: thick solid #D61D00;
+}
+.row .panel.panel-custom.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .panel-body-custom {
+	background-color: #09558C;
 	color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
 	border-top: thick solid #FFFFFF;
-}
-.row .panel.panel-custom.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .panel-body-custom-trans {
-	color: #00569D;
-	font-size: large;
-}
-.nav.navbar-nav.navbar-right li #logged-in-user {
-	margin-top: 5px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	color: #FFFFFF;
-	font-size: medium;
 }
 
 
@@ -1884,28 +1892,34 @@ h1[id]{
 	padding: 5px 5px 5px 5px;
 	
 }
-.sidebox {
-
-}
-.sidebox-header {
-	border-top: 3px solid #D61D00;
-	font-weight: bold;
-	color: #09558C;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	background-color: #EDEDED;
-}
-
 .no-padding{
 	
-	padding: 0px 0px 0px 0px ;
+	padding: 0px;
 	
 	}
 	
 .no-margin{
+	margin: 0px;
 	
-	margin: 0px 0px 0px 0px ;
+	}
 	
-	}	
+	
+.leftside-box-heading{
+	background-color: #EDEDED;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: #5FBEED;
+	font-size: large;
+	border-top: thick solid #D61D00;
+	}
+.leftside-box-body{
+	background-color: #09558C;
+	color: #FFFFFF;
+	border-top: thick solid #FFFFFF;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;
+	}
