@@ -225,6 +225,34 @@ well.well-lg .survey-question  {
 	color: #FFFFFF;
 	font-size: medium;
 }
+.nav.navbar-nav.navbar-right li #logout {
+	margin-top: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	color: #FFFFFF;
+	font-size: normal;
+}
+
+.nav.navbar-nav.navbar-right li #logout a {
+	
+	color: #FFFFFF;
+	
+}
+.nav.navbar-nav.navbar-right li #logout a:hover {
+	
+	color: #FFFFFF;
+	
+}
+.nav.navbar-nav.navbar-right li #logout a:visited {
+	
+	color: #FFFFFF;
+	
+}
 .row .panel.panel-custom.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .panel-heading-custom {
 	background-color: #EDEDED;
 	margin-top: 0px;
@@ -247,6 +275,16 @@ well.well-lg .survey-question  {
 	padding-left: 5px;
 	border-top: thick solid #FFFFFF;
 }
+.leftside-box.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .leftside-box-heading h3 {
+	font-size: small;
+	color: #0483F9;
+}
+.leftside-box.col-md-3.col-md-offset-1.visable-md.visable-xl.hidden-xs.hidden-sm.sidebox.dwd-col .leftside-box-heading h4 {
+	color: #0401FF;
+	font-size: medium;
+}
+
+
 
 
 
@@ -1903,17 +1941,50 @@ h1[id]{
 	
 	}
 	
+.rightside-box-heading{
+	background-color: #EDEDED;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	color: #3868B4;
+	font-size: normal;
+	border-top: thin solid #D61D00;
+	}	
 	
 .leftside-box-heading{
 	background-color: #EDEDED;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	color: #3868B4;
+	font-size: normal;
+	border-top: thin solid #D61D00;
+	}
+.leftside-box-body-info	{
+	background-color: #E3E3E3;
 	padding-top: 5px;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	padding-left: 5px;
-	color: #5FBEED;
-	font-size: large;
-	border-top: thick solid #D61D00;
+	color: #000000;
+	font-size: normal;
+	border-top: thin solid #ffffff;
 	}
+
+.leftside-box-body-white	{
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: #000000;
+	font-size: normal;
+	border: thin solid #C0C0C0;
+	}
+	
+	
 .leftside-box-body{
 	background-color: #09558C;
 	color: #FFFFFF;
@@ -1922,4 +1993,36 @@ h1[id]{
 	padding-right: 6px;
 	padding-bottom: 6px;
 	padding-left: 6px;
+	font-size: normal;
+	}
+.rightside-box-body{
+	background-color: #3868B4;
+	color: #FFFFFF;
+	border-top: thick solid #FFFFFF;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;	
+	}
+	
+.rightside-box-body-product{
+	background-color: #FFFFFF;
+	color: #000000;
+	border-top: thick solid #FFFFFF;
+	padding: 6px 6px 6px 6px;
+	border: thin solid #C0C0C0;
+	font-size: normal;
+	}
+			
+.leftside-box-body h3{
+	font-size: normal;
+	}
+#ecar-img {
+	width: 646px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+	
 	}
