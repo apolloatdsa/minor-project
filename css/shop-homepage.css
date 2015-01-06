@@ -5,7 +5,8 @@
  */
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	padding-top: 70px;
+	background-repeat: repeat-y;
 }
 
 .slide-image {
@@ -1946,7 +1947,7 @@ h1[id]{
 	padding-top: 2px;
 	padding-right: 2px;
 	padding-bottom: 2px;
-	padding-left: 2px;
+	padding-left: 12px;
 	color: #3868B4;
 	font-size: normal;
 	border-top: thin solid #D61D00;
@@ -1957,7 +1958,7 @@ h1[id]{
 	padding-top: 2px;
 	padding-right: 2px;
 	padding-bottom: 2px;
-	padding-left: 2px;
+	padding-left: 12px;
 	color: #3868B4;
 	font-size: normal;
 	border-top: thin solid #D61D00;
@@ -2017,12 +2018,99 @@ h1[id]{
 .leftside-box-body h3{
 	font-size: normal;
 	}
-#ecar-img {
-	width: 646px;
+.ecar-img {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+	
+.progress-image {
+	width: 215px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	
+	}
+	
+.livechat-image {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px 10px 0px;
+	
+	}
+.blog-entry {
+	border: thin none #AAA9A9;
+	width: auto;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-radius: 10px;
+	}
+	
+.blog-header {
+	width: 100%;
+	/* [disabled]height: auto; */
+	color: #000000;
+	font-size: large;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	}
+	
+.blog-body {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	width: auto;
+	float: right;	
+	
+	}
+	
+.blog-footer{
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-left: 0px;
+	
+	}	
+	
+.blog-image {
+	width: 150px;
+	height: 100px;
+	float: left;
+	margin: 0px 10px 0px 0px;
 	
 	
+	}	
+	
+.geo-image {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}	
+	
+.featured-product-img {
+	width: 90%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;	
 	}

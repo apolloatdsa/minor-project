@@ -12,7 +12,17 @@
 
 function  on_load_zeroMeter(){
 	
-	setM(0)
+	//alert(typeof sessionStorage.meterValue)
+	if (typeof sessionStorage.meterValue == 'undefined'){
+		sessionStorage.meterValue = 0;
+		setM(sessionStorage.meterValue)
+	}
+	else{
+		setM(sessionStorage.meterValue)
+		
+		}
+	
+	
 	
 	}// end of on_load_zeroMeter()
 							
@@ -80,9 +90,49 @@ function on_load_login(){// add event listener
     loginButton.addEventListener("click", readLogin );
    
    };
+   
+   var createAccBtnButton = document.getElementById("createAccBtn");// event listener for range slider
+	 
+	if(createAccBtnButton.addEventListener){
+    createAccBtnButton.addEventListener("click", createAccBtn );
+   
+   };
+  
+	
+
+   
+   
 	
 	};// end on_load_login() function
 	
+function createAccBtn(){
+	//alert(" Create an account ")
+	sessionStorage.newUserEm = document.getElementById("newUserEm").value; // New user email
+	sessionStorage.newUserFn = document.getElementById("newUserFn").value; // New user first name
+	sessionStorage.newUserLn = document.getElementById("newUserLn").value; // New user last name
+	sessionStorage.newUserAddSteet = document.getElementById("newUserAddSteet").value; // New user address
+	sessionStorage.newUserAddTown = document.getElementById("newUserAddTown").value; // New user Town
+	sessionStorage.newUserAddCity = document.getElementById("newUserAddCity").value; // New user city
+	sessionStorage.newUserAddlzip = document.getElementById("newUserAddlzip").value; // New user post code or zip
+	sessionStorage.newUserAddCountry = document.getElementById("newUserAddCountry").value; // New user country
+	
+	
+	
+	if(!sessionStorage.newUserEm || !sessionStorage.newUserFn || !sessionStorage.newUserLn ){// True when left blank -- In here if there is no user first or last name or email entered
+	sessionStorage.userEmail ="";
+	sessionStorage.userIs = "";
+	sessionStorage.userIsLoggedIn = false;
+	alert("User Email First Name and Surname are required ")	 
+	}else{
+		
+ 	sessionStorage.userIsLoggedIn = true;
+	sessionStorage.userIs = sessionStorage.newUserFn+" "+sessionStorage.newUserLn;
+	userDiv()// call function to write to the header area
+	};
+	
+	}; // Create an account createAccBtn() function
+
+
 
 
  function readLogin(){// reads the login model user email and name
@@ -133,7 +183,7 @@ function on_load_logout(){
 	logoutButton.addEventListener("click", logOut );
 	 };  							
 	
-	};	 
+	};	// end of on_load_logout() 
 
 
 function logOut(){
@@ -144,7 +194,7 @@ function logOut(){
 	document.getElementById("logged-in-user").innerHTML = "Please login ";
 	document.getElementById("logout").innerHTML = '<a href="#login" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
 	
-	};
+	};  // end of logOut()
 	 
 
 
@@ -309,7 +359,7 @@ function showResult(){
 function readArea(){
 	//alert("area option has activety")		
 	sessionStorage.areaSurvey = document.getElementById("area").value;// read the option value
-	alert(" S Your house is "+sessionStorage.areaSurvey)
+	alert("Your house is "+sessionStorage.areaSurvey)
 		
 	//showResult();
 	}// end of readArea
@@ -318,7 +368,7 @@ function readArea(){
 function houseType(){
 	//alert("detsemi option has activety")	
 	sessionStorage.houseTypeSurvey = document.getElementById("houseType").value; // read the option value
-	alert(" S Your house is "+sessionStorage.houseTypeSurvey)
+	alert("Your house is "+sessionStorage.houseTypeSurvey)
 		
 		//showResult();
 		};		
@@ -326,7 +376,7 @@ function houseType(){
 function detsemi(){
 	//alert("detsemi option has activety")
 	sessionStorage.detsemiSurvey = document.getElementById("detsemi").value; // read the option value	
-	alert(" S Your house is "+sessionStorage.detsemiSurvey)
+	alert("Your house is "+sessionStorage.detsemiSurvey)
 		//showResult();
 	
 	
@@ -337,7 +387,7 @@ function builtWhen(){
 	
 	//alert("Built option has activety")
 	sessionStorage.builtWhenSurvey = document.getElementById("builtWhen").value; // read the option value
-	alert(" S Your home was built "+sessionStorage.builtWhenSurvey)
+	alert("Your home was built "+sessionStorage.builtWhenSurvey)
 	
 	//showResult();
 	
@@ -350,7 +400,7 @@ function rooms(){
 	//alert("Number of rooms has activity ")
 	
 	sessionStorage.roomsSurvey = document.getElementById("rooms").value; // read the option value
-	alert(" S Number of rooms is = "+sessionStorage.roomsSurvey)
+	alert("Number of rooms is = "+sessionStorage.roomsSurvey)
 	
 	// showResult();
 	
@@ -364,7 +414,7 @@ function numboffloors(){
 	//alert("Number of floors has activety ")
 	
 	sessionStorage.numboffloorsSurvey = document.getElementById("numboffloors").value; // read the option value
-	alert(" S Number of floors is = "+sessionStorage.numboffloorsSurvey)
+	alert("Number of floors is = "+sessionStorage.numboffloorsSurvey)
 	
 	//showResult();
 	
@@ -378,7 +428,7 @@ function conservatory(){
 	//alert("Conservatory has activity")
 	
 	sessionStorage.conservatorySurvey = document.getElementById("conservatory").value; // read the option value
-	alert("S Do you have a conservatory ? "+sessionStorage.conservatorySurvey)
+	alert("Do you have a conservatory ? "+sessionStorage.conservatorySurvey)
 	
 	// showResult();
 
@@ -390,7 +440,7 @@ function conDubGlass(){
 	
 	//alert("conDubGlass")
 	sessionStorage.conDubGlassSurvey = document.getElementById("conDubGlass").value; // read the option value
-	alert("S Is the conservatory double or triple glased ? "+sessionStorage.conDubGlassSurvey)
+	alert("Is the conservatory double or triple glased ? "+sessionStorage.conDubGlassSurvey)
 	
 	// showResult();
 	
@@ -401,7 +451,7 @@ function perCentDTGlazed(){
 	
 	//alert("perCentDTGlazed")
 	sessionStorage.perCentDTGlazedSurvey = document.getElementById("perCentDTGlazed").value; // read the option value
-	alert("S What percentage of your home is double or triple glazed ? "+sessionStorage.perCentDTGlazedSurvey)
+	alert("What percentage of your home is double or triple glazed ? "+sessionStorage.perCentDTGlazedSurvey)
 	
 	
 	}// perCentDTGlazed
@@ -411,7 +461,7 @@ function wallsConst(){
 	
 	//alert("wallsConst")
 	sessionStorage.wallsConstSurvey = document.getElementById("wallsConst").value; // read the option value
-	alert("S How are your walls constructed ? "+sessionStorage.wallsConstSurvey)
+	alert("How are your walls constructed ? "+sessionStorage.wallsConstSurvey)
 	
 	
 	
@@ -423,7 +473,7 @@ function typeOfRoof(){
 	
 	// alert(" typeOfRoof ")
 	sessionStorage.typeOfRoofSurvey = document.getElementById("typeOfRoof").value; // read the option value
-	alert("S What type of roof do you have  "+sessionStorage.typeOfRoofSurvey)
+	alert("What type of roof do you have  "+sessionStorage.typeOfRoofSurvey)
 	
 
 	
@@ -433,7 +483,7 @@ function typeOfRoof(){
 function roofInsul(){
 	//alert("Roof insulation  ")
 	sessionStorage.roofInsulSurvey = document.getElementById("roofInsul").value; // read the option value
-	alert("S What type of roof insulation do you have  "+sessionStorage.roofInsulSurvey)
+	alert("What type of roof insulation do you have  "+sessionStorage.roofInsulSurvey)
 	
 	
 	}
@@ -443,7 +493,7 @@ function homeDubTripG(){
 	
 	//alert("Double or Triple Glazing has activety ")
 	sessionStorage.homeDubTripGSurvey = document.getElementById("homeDubTripG").value; // read the option value
-	alert("S Is your home double or triple glased ? "+sessionStorage.homeDubTripGSurvey)
+	alert("Is your home double or triple glased ? "+sessionStorage.homeDubTripGSurvey)
 	
 	// showResult();
 	
