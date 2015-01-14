@@ -159,7 +159,7 @@ function createAccBtn(){
  //alert(typeof sessionStorage.userIsLoggedIn)
  
 	if(typeof sessionStorage.userIsLoggedIn == 'undefined' || sessionStorage.userIsLoggedIn == 'false'){// first login will be undefined
-	document.getElementById("logged-in-user").innerHTML = "Please login ";
+	document.getElementById("logged-in-user").innerHTML = " ";
 	document.getElementById("logout").innerHTML = '<a href="#login" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
 	sessionStorage.userIsLoggedIn = false;	 
 	}
@@ -191,7 +191,7 @@ function logOut(){
 	sessionStorage.userIsLoggedIn = false;
 	sessionStorage.userIs = "";
 	sessionStorage.userEmail ="";
-	document.getElementById("logged-in-user").innerHTML = "Please login ";
+	document.getElementById("logged-in-user").innerHTML = "";
 	document.getElementById("logout").innerHTML = '<a href="#login" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
 	
 	};  // end of logOut()

@@ -2025,12 +2025,19 @@ h1[id]{
 	margin-right: auto;
 
 	}
+
+.radiant-img {
+	
+	margin: 10px 10px 10px 10px;
+	
+	}
 	
 .progress-image {
 	width: 215px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	
 	
 	}
 	
@@ -2113,4 +2120,28 @@ h1[id]{
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0px;	
+	}
+	
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.sitemap li {
+	list-style-type: none;	
+	
+	
+	}
+	
+	
+.review {
+	
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 	}
