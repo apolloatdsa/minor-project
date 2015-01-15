@@ -131,7 +131,7 @@
           <ul class="nav navbar-nav navbar-right">
           
            <li><div id="logged-in-user"><script>userDiv()</script></div></li>
-           <li> <a href="#login3" data-toggle ="modal"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+           <li id="login-listitem" style="display: block;"> <a href="#login3" data-toggle ="modal"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
             <li><div id="logout"><script>userDiv()</script></div></li>
 			
              
@@ -143,7 +143,7 @@
    
 
     <!-- Page Content second container below top nav bar -->
-    
+   <div class="container " id ="display-user-in"><p>&nbsp;</p></div> 
 <div class="container"><!-- InstanceBeginEditable name="EditRegion3" -->
 
 		
@@ -167,12 +167,12 @@
   </div>
     <select id="sourceOfHeat" class="survey-question inputbox">
       <option value = "--- Please select ---">--- Please select ---</option>
-      <option value = "Boiler">Boiler</option>
-      <option value = "Community heating">Community heating (Shared)</option>
-      <option value = "Warm air">Warm air</option>
-      <option value = "Heat pumps">Heat pumps</option>
-      <option value = "Room heaters">Room heaters</option>
-      <option value = "Electric ceiling heaters">Electric ceiling heaters </option>
+      <option value = 3>Boiler</option>
+      <option value = 3>Community heating (Shared)</option>
+      <option value = 3>Warm air</option>
+      <option style = "background-color: #127F00 " value = 4>Heat pumps</option>
+      <option value = 2>Room heaters</option>
+      <option value = 2>Electric ceiling heaters </option>
     </optgroup>                   
     </select>
                     
@@ -188,12 +188,12 @@
           
   <select id="typeOfBoiler" class="survey-question inputbox">
     <option value = "--- Please select ---">--- Please select ---</option>
-    <option value = "Normal">Normal</option>
-    <option value = "Combination boiler">Combination boiler (No hot water cylinder)</option>
-    <option value = "Condensing boiler">Condensing boiler</option>
-    <option value = "Back boiler">Back boiler</option>
-    <option value = "Range cooker">Range cooker</option>
-    <option value = "Combined primart storage unit">Combined primart storage unit</option>
+    <option value = 2>Normal</option>
+    <option style = "background-color: #127F00 " value = 3>Combination boiler (No hot water cylinder)</option>
+    <option style = "background-color: #127F00 " value = 3>Condensing boiler</option>
+    <option value = 1>Back boiler</option>
+    <option value = 2>Range cooker</option>
+    <option value = 2>Combined primart storage unit</option>
     </optgroup>                   
   </select>
                     
@@ -209,13 +209,13 @@
 
   <select id="typeOfFuel" class="survey-question inputbox">
     <option value = "--- Please select ---">--- Please select ---</option>
-    <option value = "Bulk LPG">Bulk LPG</option>
-    <option value = "Mains gas">Mains gas</option>
-    <option value = "Oil">Oil</option>
-    <option value = "House coal">House coal</option>
-    <option value = "Smokeless fuel">Smokeless fuel</option>
-    <option value = "Wood">Wood</option>
-    <option value = "Electricity">Electricity</option>
+    <option value = 2>Bulk LPG</option>
+    <option style = "background-color: #127F00 " value = 4>Mains gas</option>
+    <option style = "background-color: #127F00 " value = 3>Oil</option>
+    <option value = 1>House coal</option>
+    <option value = 2>Smokeless fuel</option>
+    <option value = 3>Wood</option>
+    <option value = 3>Electricity</option>
     </optgroup>                   
   </select>
 
@@ -232,8 +232,8 @@
           
   <select id="whenBoilerInstalled" class="survey-question inputbox">
    <option value = "--- Please select ---">--- Please select ---</option>
-   <option value = "1997 or earlier">1997 or earlier</option>
-   <option value = "Post 1997">Post 1997</option>
+   <option value = 2>1997 or earlier</option>
+   <option style = "background-color: #127F00 " value = 4>Post 1997</option>
    </optgroup>                   
   </select>
                     
@@ -246,9 +246,9 @@
     <div class="survey-info pull-right"><span class="glyphicon glyphicon-exclamation-sign input-info" ></span>  <small><a href="#">Need more information</a></small></div>
     <select id="boilerServiced" class="survey-question inputbox">
       <option value = "--- Please select ---">--- Please select ---</option>
-      <option value = "Not applicable">Not applicable</option>
-      <option value = "Yes">Yes</option>
-      <option value = "No">No</option>
+      <option value = 0>Not applicable</option>
+      <option style = "background-color: #127F00 " value = 4>Yes</option>
+      <option value = 1>No</option>
       </optgroup>                   
     </select>
                     
@@ -264,12 +264,12 @@
           
   <select id="heatingControl" class="survey-question inputbox">
     <option value = "--- Please select ---">--- Please select ---</option>
-    <option value = "No time or thermostatic control">No time or thermostatic control</option>
-    <option value = "Room thermostat only">Room thermostat only</option>
-    <option value = "Programmer thermostat radiator valves">Programmer thermostat radiator valves</option>
-    <option value = "Programmer and room thermostatic radiator valves">Programmer and room thermostatic radiator valves</option>
-    <option value = "Programmer room thermostatic and thermostatic radiator valves">Programmer room thermostatic and thermostatic radiator valves</option>
-    <option value = "Programmer and at least two room thermostats">Programmer and at least two room thermostats</option>
+    <option value = 0>No time or thermostatic control</option>
+    <option value = 2>Room thermostat only</option>
+    <option value = 2>Programmer thermostat radiator valves</option>
+    <option value = 3>Programmer and room thermostatic radiator valves</option>
+    <option style = "background-color: #127F00 " value = 4>Programmer room thermostatic and thermostatic radiator valves</option>
+    <option value = 3>Programmer and at least two room thermostats</option>
     </optgroup>                   
   </select>
                     
@@ -285,9 +285,9 @@
           
   <select id="canYouUseControl" class="survey-question inputbox">
     <option value = "--- Please select ---">--- Please select ---</option>
-    <option value = "Not applicable">Not applicable</option>
-    <option value = "Yes">Yes</option>
-    <option value = "No">No</option>
+    <option value = 0>Not applicable</option>
+    <option style = "background-color: #127F00 " value = 4>Yes</option>
+    <option value = 2>No</option>
     </optgroup>                   
   </select>
                     
@@ -348,20 +348,20 @@
                     
         <div class="col-xs-12  col-sm-12 col-lg-4 col-md-4 pull-right footer-social">
            <ul>
-           <li> <a href="https://www.facebook.com/DigitalSkillsAcademy" ><i class="fa fa-facebook"></i> Facebook</a></li>
+           <li> <a href="https://www.facebook.com/DigitalSkillsAcademy" target="new" ><i style="color: #2E4DA7 " class="fa fa-facebook fa-2x"></i> Facebook</a></li>
            <li> | </li>
-            <li> <a href="https://www.linkedin.com/company/digital-skills-academy" ><i class="fa fa-linkedin-square"></i> linkedin</a></li>
+            <li> <a href="https://www.linkedin.com/company/digital-skills-academy" target="new"><i style="color: #4875B4 " class="fa fa-linkedin-square fa-2x"></i> linkedin</a></li>
             <li> | </li>
-			<li> <a href="https://plus.google.com/111257973936426684374/about"><i class="fa fa-google-plus"></i> Google+</a></li>
+			<li> <a href="https://plus.google.com/111257973936426684374/about" target="new"><i style="color: #C63D2D "  class="fa fa-google-plus fa-2x"></i> Google+</a></li>
             <li> | </li>
-			<li> <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"></i> Pinterest</a></li>
+			<li> <a href="https://www.pinterest.com/" target="new"><i style="color: #C92228 " class="fa fa-pinterest-square fa-2x" ></i> Pinterest</a></li>
             <li> | </li>
-			<li> <a href="http://www.digitalskillsacademy.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
+			<li> <a href="http://www.digitalskillsacademy.com/"target="new" ><i style="color: #33CCFF " class="fa fa-twitter fa-2x "  ></i> Twitter</a></li>
             <li> | </li>
-			<li> <a href="https://github.com/apolloatdsa/minor-project"><i class="fa fa-github-square"></i> Project on GitHub</a></li>
-            
-
-             
+			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> youTube</a></li>
+            <li> | </li>
+			<li> <a href="https://github.com/apolloatdsa/minor-project" target="new"><i style="color: #662A81 " class="fa fa-github-square fa-2x"  ></i> Project on GitHub</a></li>
+           
           </ul></div>
                     
                 </div>
