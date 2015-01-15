@@ -281,6 +281,8 @@ function signupBtn(){
 	//alert("signup button")
 	//alert("Sign up button was clicked")
 	document.getElementById("logout").innerHTML = '<a href="#login2" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Logout</a>';
+	sessionStorage.signupFn = document.getElementById("signupFn").value;
+	sessionStorage.signupLn = document.getElementById("signupLn").value;
 	sessionStorage.userIs = sessionStorage.signupFn+" "+sessionStorage.signupLn;
 	document.getElementById("logged-in-user").innerHTML = "Welcome "+sessionStorage.userIs;
 	sessionStorage.userIsLoggedIn = true;
@@ -359,7 +361,7 @@ function showResult(){
 function readArea(){
 	//alert("area option has activety")		
 	sessionStorage.areaSurvey = document.getElementById("area").value;// read the option value
-	alert("Your house is "+sessionStorage.areaSurvey)
+	//alert("Your house is "+sessionStorage.areaSurvey)
 		
 	//showResult();
 	}// end of readArea
@@ -368,7 +370,7 @@ function readArea(){
 function houseType(){
 	//alert("detsemi option has activety")	
 	sessionStorage.houseTypeSurvey = document.getElementById("houseType").value; // read the option value
-	alert("Your house is "+sessionStorage.houseTypeSurvey)
+	//alert("Your house is "+sessionStorage.houseTypeSurvey)
 		
 		//showResult();
 		};		
@@ -376,7 +378,7 @@ function houseType(){
 function detsemi(){
 	//alert("detsemi option has activety")
 	sessionStorage.detsemiSurvey = document.getElementById("detsemi").value; // read the option value	
-	alert("Your house is "+sessionStorage.detsemiSurvey)
+	//alert("Your house is "+sessionStorage.detsemiSurvey)
 		//showResult();
 	
 	
@@ -387,7 +389,7 @@ function builtWhen(){
 	
 	//alert("Built option has activety")
 	sessionStorage.builtWhenSurvey = document.getElementById("builtWhen").value; // read the option value
-	alert("Your home was built "+sessionStorage.builtWhenSurvey)
+	//alert("Your home was built "+sessionStorage.builtWhenSurvey)
 	
 	//showResult();
 	
@@ -400,7 +402,7 @@ function rooms(){
 	//alert("Number of rooms has activity ")
 	
 	sessionStorage.roomsSurvey = document.getElementById("rooms").value; // read the option value
-	alert("Number of rooms is = "+sessionStorage.roomsSurvey)
+	//alert("Number of rooms is = "+sessionStorage.roomsSurvey)
 	
 	// showResult();
 	
@@ -414,7 +416,7 @@ function numboffloors(){
 	//alert("Number of floors has activety ")
 	
 	sessionStorage.numboffloorsSurvey = document.getElementById("numboffloors").value; // read the option value
-	alert("Number of floors is = "+sessionStorage.numboffloorsSurvey)
+	//alert("Number of floors is = "+sessionStorage.numboffloorsSurvey)
 	
 	//showResult();
 	
@@ -428,7 +430,7 @@ function conservatory(){
 	//alert("Conservatory has activity")
 	
 	sessionStorage.conservatorySurvey = document.getElementById("conservatory").value; // read the option value
-	alert("Do you have a conservatory ? "+sessionStorage.conservatorySurvey)
+	//alert("Do you have a conservatory ? "+sessionStorage.conservatorySurvey)
 	
 	// showResult();
 
@@ -440,7 +442,7 @@ function conDubGlass(){
 	
 	//alert("conDubGlass")
 	sessionStorage.conDubGlassSurvey = document.getElementById("conDubGlass").value; // read the option value
-	alert("Is the conservatory double or triple glased ? "+sessionStorage.conDubGlassSurvey)
+	//alert("Is the conservatory double or triple glased ? "+sessionStorage.conDubGlassSurvey)
 	
 	// showResult();
 	
@@ -451,7 +453,7 @@ function perCentDTGlazed(){
 	
 	//alert("perCentDTGlazed")
 	sessionStorage.perCentDTGlazedSurvey = document.getElementById("perCentDTGlazed").value; // read the option value
-	alert("What percentage of your home is double or triple glazed ? "+sessionStorage.perCentDTGlazedSurvey)
+	//alert("What percentage of your home is double or triple glazed ? "+sessionStorage.perCentDTGlazedSurvey)
 	
 	
 	}// perCentDTGlazed
@@ -461,7 +463,7 @@ function wallsConst(){
 	
 	//alert("wallsConst")
 	sessionStorage.wallsConstSurvey = document.getElementById("wallsConst").value; // read the option value
-	alert("How are your walls constructed ? "+sessionStorage.wallsConstSurvey)
+	//alert("How are your walls constructed ? "+sessionStorage.wallsConstSurvey)
 	
 	
 	
@@ -473,7 +475,7 @@ function typeOfRoof(){
 	
 	// alert(" typeOfRoof ")
 	sessionStorage.typeOfRoofSurvey = document.getElementById("typeOfRoof").value; // read the option value
-	alert("What type of roof do you have  "+sessionStorage.typeOfRoofSurvey)
+	//alert("What type of roof do you have  "+sessionStorage.typeOfRoofSurvey)
 	
 
 	
@@ -483,7 +485,7 @@ function typeOfRoof(){
 function roofInsul(){
 	//alert("Roof insulation  ")
 	sessionStorage.roofInsulSurvey = document.getElementById("roofInsul").value; // read the option value
-	alert("What type of roof insulation do you have  "+sessionStorage.roofInsulSurvey)
+	//alert("What type of roof insulation do you have  "+sessionStorage.roofInsulSurvey)
 	
 	
 	}
@@ -493,7 +495,7 @@ function homeDubTripG(){
 	
 	//alert("Double or Triple Glazing has activety ")
 	sessionStorage.homeDubTripGSurvey = document.getElementById("homeDubTripG").value; // read the option value
-	alert("Is your home double or triple glased ? "+sessionStorage.homeDubTripGSurvey)
+	//alert("Is your home double or triple glased ? "+sessionStorage.homeDubTripGSurvey)
 	
 	// showResult();
 	
@@ -637,7 +639,7 @@ var homeDubTripGOption = document.getElementById("homeDubTripG");// event listen
 function sourceOfHeat(){
 	//alert(" Source of heat has activity ")
 	sessionStorage.sourceOfHeatSurvey = document.getElementById("sourceOfHeat").value; // read the option value
-	alert("What is your main source of heat ? "+sessionStorage.sourceOfHeatSurvey)
+	//alert("What is your main source of heat ? "+sessionStorage.sourceOfHeatSurvey)
 	
 	// showResult();
 	
@@ -648,7 +650,7 @@ function typeOfBoiler(){
 	
 	//alert(" Type of boiler has activity ")
 	sessionStorage.typeOfBoilerSurvey = document.getElementById("typeOfBoiler").value; // read the option value
-	alert("What type of boiler do you use ? "+sessionStorage.typeOfBoilerSurvey)
+	//alert("What type of boiler do you use ? "+sessionStorage.typeOfBoilerSurvey)
 	
 	// showResult();
 	
@@ -661,7 +663,7 @@ function typeOfFuel(){
 	//alert(" Type of fuel has activity ")
 	
 	sessionStorage.typeOfFuelSurvey = document.getElementById("typeOfFuel").value; // read the option value
-	alert("What type of fuel do you use ? "+sessionStorage.typeOfFuelSurvey)
+	//alert("What type of fuel do you use ? "+sessionStorage.typeOfFuelSurvey)
 	
 	// showResult();
 	
@@ -675,7 +677,7 @@ function whenBoilerInstalled(){
 	
 	//alert(" When boiler installed has activety")
 	sessionStorage.whenBoilerInstalledSurvey = document.getElementById("whenBoilerInstalled").value; // read the option value
-	alert("When was your boiler installed ? "+sessionStorage.whenBoilerInstalledSurvey)
+	//alert("When was your boiler installed ? "+sessionStorage.whenBoilerInstalledSurvey)
 	
 	// showResult();
 	
@@ -687,7 +689,7 @@ function boilerServiced(){
 	
 	//alert("Is the boiler serviced has activety ")
 	sessionStorage.boilerServicedSurvey = document.getElementById("boilerServiced").value; // read the option value
-	alert("Do you have a regular service ? "+sessionStorage.boilerServicedSurvey)
+	//alert("Do you have a regular service ? "+sessionStorage.boilerServicedSurvey)
 	
 	// showResult();
 	
@@ -698,7 +700,7 @@ function boilerServiced(){
 function heatingControl(){
 	//alert(" Heating control has activety ")
 	sessionStorage.heatingControlSurvey = document.getElementById("heatingControl").value; // read the option value
-	alert("What heating controls do you use "+sessionStorage.heatingControlSurvey)
+	//alert("What heating controls do you use "+sessionStorage.heatingControlSurvey)
 	
 	// showResult();
 	
@@ -713,7 +715,7 @@ function canYouUseControl(){
 	
 	//alert("Can you set the controls has activety")
 	sessionStorage.canYouUseControlSurvey = document.getElementById("canYouUseControl").value; // read the option value
-	alert("Do you know how to control your heating ? "+sessionStorage.canYouUseControlSurvey)
+	//alert("Do you know how to control your heating ? "+sessionStorage.canYouUseControlSurvey)
 	
 	// showResult();
 
@@ -788,7 +790,7 @@ function waterHeater(){
 	
 	//alert("Water heater has activety")
 	sessionStorage.waterHeaterSurvey = document.getElementById("waterHeater").value; // read the option value
-	alert("How do you heat the water ? "+sessionStorage.waterHeaterSurvey)
+	//alert("How do you heat the water ? "+sessionStorage.waterHeaterSurvey)
 	
 	// showResult();
 
@@ -798,7 +800,7 @@ function cylinder(){
 	
 	//alert("hot water cylinder has activety")
 	sessionStorage.cylinderSurvey = document.getElementById("cylinder").value; // read the option value
-	alert("Is there a hot water cylinder ? "+sessionStorage.cylinderSurvey)
+	//alert("Is there a hot water cylinder ? "+sessionStorage.cylinderSurvey)
 	
 	// showResult();
 	};
@@ -806,7 +808,7 @@ function cylinder(){
 function showerBath(){
 	//alert("How do you wash has activety")
 	sessionStorage.showerBathSurvey = document.getElementById("showerBath").value; // read the option value
-	alert("Is there a hot water cylinder ? "+sessionStorage.showerBathSurvey)
+	//alert("Is there a hot water cylinder ? "+sessionStorage.showerBathSurvey)
 	
 	// showResult();
 	
@@ -816,7 +818,7 @@ function runningTap(){
 	
 	//alert("Running tap has activety")
 	sessionStorage.runningTapSurvey = document.getElementById("runningTap").value; // read the option value
-	alert("Do you keep the hot tap running ? "+sessionStorage.runningTapSurvey)
+	//alert("Do you keep the hot tap running ? "+sessionStorage.runningTapSurvey)
 	
 	// showResult();
 	
@@ -825,7 +827,7 @@ function runningTap(){
 function cylinderSize(){
 	//alert("Cylinder size has activety")
 	sessionStorage.cylinderSizeSurvey = document.getElementById("cylinderSize").value; // read the option value
-	alert("What size is the cylinder ? "+sessionStorage.cylinderSizeSurvey)
+	//alert("What size is the cylinder ? "+sessionStorage.cylinderSizeSurvey)
 	
 	// showResult();
 	
@@ -833,7 +835,7 @@ function cylinderSize(){
 function cylinderTermo(){
 	//alert("Cylinder size has activety")
 	sessionStorage.cylinderTermoSurvey = document.getElementById("cylinderTermo").value; // read the option value
-	alert("Does your cylinder have a thermostat ? "+sessionStorage.cylinderTermoSurvey)
+	//alert("Does your cylinder have a thermostat ? "+sessionStorage.cylinderTermoSurvey)
 	
 	// showResult();
 	
@@ -843,7 +845,7 @@ function cylinderTermo(){
 function cylinderInsulType(){
 	//alert("cylinder Insul Type has activety")
 	sessionStorage.cylinderInsulTypeSurvey = document.getElementById("cylinderInsulType").value; // read the option value
-	alert("What insulation is on the cylinder ? "+sessionStorage.cylinderInsulTypeSurvey)
+	//alert("What insulation is on the cylinder ? "+sessionStorage.cylinderInsulTypeSurvey)
 	
 	// showResult();
 	
@@ -915,7 +917,7 @@ function on_load_form_p4_read(){
 function hotWaterSolar(){
 	//alert("hotWaterSolar has activety")
 	sessionStorage.hotWaterSolarSurvey = document.getElementById("hotWaterSolar").value; // read the option value
-	alert("Do you have solar panels to heat water ? "+sessionStorage.hotWaterSolarSurvey)
+	//alert("Do you have solar panels to heat water ? "+sessionStorage.hotWaterSolarSurvey)
 	
 	// showResult();
 
@@ -924,7 +926,7 @@ function hotWaterSolar(){
 function pvPanels(){
 	//alert("PV panel has activety")
 	sessionStorage.pvPanelsSurvey = document.getElementById("pvPanels").value; // read the option value
-	alert("Do you have PV panels to generate electricity ? "+sessionStorage.pvPanelsSurvey)
+	//alert("Do you have PV panels to generate electricity ? "+sessionStorage.pvPanelsSurvey)
 	
 	// showResult();
 
@@ -933,7 +935,7 @@ function pvPanels(){
 function windTurbine(){
 	//alert("Wind Turbine has activety")
 	sessionStorage.windTurbineSurvey = document.getElementById("windTurbine").value; // read the option value
-	alert("Do you have a wind turbine to generate electricity ? "+sessionStorage.windTurbineSurvey)
+	//alert("Do you have a wind turbine to generate electricity ? "+sessionStorage.windTurbineSurvey)
 	
 	// showResult();
 
@@ -973,7 +975,7 @@ function on_load_form_p5_read(){
 function singleOrDualMeter(){
 	//alert("Single or Dual meter has activety")
 	sessionStorage.singleOrDualMeterSurvey = document.getElementById("singleOrDualMeter").value; // read the option value
-	alert("Do you have a single or dual meter ? "+sessionStorage.singleOrDualMeterSurvey)
+	//alert("Do you have a single or dual meter ? "+sessionStorage.singleOrDualMeterSurvey)
 	
 	// showResult();
 	
@@ -985,7 +987,7 @@ function energyBulbs(){
 	
 	//alert("energy Bulbs has activety")
 	sessionStorage.energyBulbsSurvey = document.getElementById("energyBulbs").value; // read the option value
-	alert("What percentage of your home has energy bulbs ? "+sessionStorage.energyBulbsSurvey)
+	//alert("What percentage of your home has energy bulbs ? "+sessionStorage.energyBulbsSurvey)
 	
 	// showResult();
 	
@@ -995,7 +997,7 @@ function energyBulbs(){
 function washTemp(){
 	//alert("What temp do you wash clothes at has activety")
 	sessionStorage.washTempSurvey = document.getElementById("washTemp").value; // read the option value
-	alert("What temp do you wash clothes at has activety ? "+sessionStorage.washTempSurvey)
+	//alert("What temp do you wash clothes at has activety ? "+sessionStorage.washTempSurvey)
 	
 	// showResult();
 	
@@ -1006,7 +1008,7 @@ function washTemp(){
 function waitForFull(){
 	//alert("Wait for full load has activety")
 	sessionStorage.waitForFullSurvey = document.getElementById("waitForFull").value; // read the option value
-	alert("Wait for full load has activety ? "+sessionStorage.waitForFullSurvey)
+	//alert("Wait for full load has activety ? "+sessionStorage.waitForFullSurvey)
 	
 	// showResult();
 
@@ -1015,7 +1017,7 @@ function waitForFull(){
 function tumbleDry(){
 	//alert("Tumble dry has activety")
 	sessionStorage.tumbleDrySurvey = document.getElementById("tumbleDry").value; // read the option value
-	alert("Tumble dry has activety ? "+sessionStorage.tumbleDrySurvey)
+	//alert("Tumble dry has activety ? "+sessionStorage.tumbleDrySurvey)
 	
 	// showResult();
 	
@@ -1025,7 +1027,7 @@ function tumbleDry(){
 function leftOn(){
 	//alert("Appliances left on standby has activety")
 	sessionStorage.leftOnSurvey = document.getElementById("leftOn").value; // read the option value
-	alert("Appliances left on standby has activety ? "+sessionStorage.leftOnSurvey)
+	//alert("Appliances left on standby has activety ? "+sessionStorage.leftOnSurvey)
 	
 	// showResult();
 	
@@ -1034,7 +1036,7 @@ function leftOn(){
 function boilKettle(){
 	//alert("Boil kettle has activety")
 	sessionStorage.boilKettleSurvey = document.getElementById("boilKettle").value; // read the option value
-	alert("Boil kettle has activety ? "+sessionStorage.boilKettleSurvey)
+	//alert("Boil kettle has activety ? "+sessionStorage.boilKettleSurvey)
 	
 	// showResult();
 	

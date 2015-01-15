@@ -19,8 +19,10 @@
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 <link href="css/shop-homepage.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <script src="email/validation.js" type="text/javascript"></script>
 <script src="js/custom.js" type="text/javascript"></script>
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media  queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -31,15 +33,15 @@
 <!-- InstanceEndEditable -->
 <!-- InstanceParam name="First9col" type="boolean" value="true" -->
 </head>
-<body>
+<body class="aec-body">
 <div class="page-header no-padding no-margin">
     <div class="container ">
-    <img class="img-responsive " src="img/logo-2.png"  alt=""/>
+    <img class="img-responsive " src="img/logo-4.png"  alt=""/>
     </div>
     </div>
 
  
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     
       <div class="container-fluid">
       
@@ -60,7 +62,7 @@
             
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="wireframe.html">Wireframe</a></li>
+                <li><a href="mobile_site.html">Mobile Site</a></li>
                 <li><a href="breezecatcher.html">Breezecatcher </a></li>
                 <li><a href="product_3.html">Product 3</a></li>
                 <li><a href="product_4.html">Product 4</a></li>
@@ -252,8 +254,35 @@
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Digital Skills Academy &amp; The Apollo team 2014 | <a href="privacy.html">Privacy</a> | <a href="contact.php">Contact</a> | <a href="feedback.html">Feedback</a> | <a href="sitemap.html">Site map</a></p>
+                <div class="col-lg-12 footer-social">
+               <div class="col-xs-10  col-sm-6 col-lg-4 col-md-4 pull-left">
+                    <p>Copyright &copy; Digital Skills Academy &amp; The Apollo team 2014 </p>
+                    
+              </div>
+              
+              <div class="col-xs-10  col-sm-6 col-lg-4 col-md-4 footer-social">
+                    <p> <a href="privacy.html">Privacy</a> | <a href="contact.php">Contact</a> | <a href="feedback.html">Feedback</a> | <a href="sitemap.html">Site map</a></p>
+                    
+              </div>
+              
+              
+                    
+        <div class="col-xs-12  col-sm-12 col-lg-4 col-md-4 pull-right">
+           <ul class="footer-social">
+           <li> <a href="https://www.facebook.com/DigitalSkillsAcademy" ><i class="fa fa-facebook"></i> Facebook</a></li>
+           <li> | </li>
+            <li> <a href="https://www.linkedin.com/company/digital-skills-academy" ><i class="fa fa-linkedin-square"></i> linkedin</a></li>
+            <li> | </li>
+			<li> <a href="https://plus.google.com/111257973936426684374/about"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li> | </li>
+			<li> <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"></i> Pinterest</a></li>
+            <li> | </li>
+			<li> <a href="http://www.digitalskillsacademy.com/"><i class="fa fa-twitter"></i> Twitter</a></li>
+            
+            
+             
+          </ul></div>
+                    
                 </div>
             </div>
         </footer>
@@ -311,8 +340,8 @@
       <div class="modal-body">
         <p>Please enter your login below &hellip;</p>
         <form id="login-form">
-        <p><input type="email" id="login-em" placeholder="Email"></p>
-        <p><input type="text" id="login-user" placeholder="User name"></p>
+        <p><input type="email" id="login-em" value="tom@webinnovate.ie" placeholder="Email"></p>
+        <p><input type="text" id="login-user" value="Tom Delaney" placeholder="User name"></p>
         </form>
         <pre><button type="submit" id="login-btn" class="btn btn-success" data-dismiss="modal">Login</button>	<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button></pre>
         
@@ -390,14 +419,14 @@
         <p>Sign up</p>
         <h2><small>Enter details here</small></h2>
         <form id="create-acc-1">
-        <p><input type="email" id="signupEm" placeholder="Email"></p>
-        <p><input type="text" id="signupFn" placeholder="First name"></p>
-        <p><input type="text" id="signupLn" placeholder="Surname name"></p>
-        <p><input type="text" id="signupAddSteet" placeholder="Street"></p>
-        <p><input type="text" id="signupAddTown" placeholder="Town"></p>
-        <p><input type="text" id="signupAddCity" placeholder="City"></p>
-        <p><input type="text" id="signupAddlzip" placeholder="Zip or Poat code"></p>
-        <p><input type="text" id="signupAddCountry" placeholder="Country"></p>
+        <p><input type="email" id="signupEm" value="tom@webinnovate.ie" placeholder="Email"></p>
+        <p><input type="text" id="signupFn" value="Tom"  placeholder="First name"></p>
+        <p><input type="text" id="signupLn" value="Delaney"  placeholder="Surname name"></p>
+        <p><input type="text" id="signupAddSteet" value="1 Crane St"  placeholder="Street"></p>
+        <p><input type="text" id="signupAddTown" value=""  placeholder="Town"></p>
+        <p><input type="text" id="signupAddCity" value="Dublin"  placeholder="City"></p>
+        <p><input type="text" id="signupAddlzip" value="D 8"  placeholder="Zip or Poat code"></p>
+        <p><input type="text" id="signupAddCountry" value="Ireland"  placeholder="Country"></p>
         </form>
         <pre><button type="submit" id="signupBtn" class="btn btn-success" data-dismiss="modal">Create</button>	<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button></pre>
       </div>
