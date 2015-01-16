@@ -100,13 +100,8 @@
               
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="ber_questioner_1.html">BER Questioner 1</a></li>
-                <li><a href="ber_questioner_2.html">BER Questioner 2</a></li>
-                <li><a href="ber_questioner_3.html">BER Questioner 3</a></li>
-                <li><a href="ber_questioner_4.html">BER Questioner 4</a></li>
-                <li><a href="ber_questioner_5.html">BER Questioner 5</a></li>
-                <li><a href="ber_questioner_6.html">BER Questioner 6</a></li>
-                <li><a href="ber_questioner_result.html">BER Questioner Result</a></li>
+                <li><a href="ber_advice_for_householders.html">BER Advice For Householders</a></li>
+                <li><a href="ber_questioner_1.html">BER Pre Test</a></li>
                
               </ul>
             </li>
@@ -166,10 +161,10 @@
     </span> <small><a href="#">Need more information</a></small>
   </div>
     <select id="sourceOfHeat" class="survey-question inputbox">
-      <option value = "--- Please select ---">--- Please select ---</option>
-      <option value = 3>Boiler</option>
-      <option value = 3>Community heating (Shared)</option>
-      <option value = 3>Warm air</option>
+      <option value = "">--- Please select ---</option>
+      <option style = "background-color: #7CC808 "value = 3>Boiler</option>
+      <option style = "background-color: #7CC808 "value = 3>Community heating (Shared)</option>
+      <option style = "background-color: #7CC808 "value = 3>Warm air</option>
       <option style = "background-color: #127F00 " value = 4>Heat pumps</option>
       <option value = 2>Room heaters</option>
       <option value = 2>Electric ceiling heaters </option>
@@ -187,10 +182,10 @@
 </div>
           
   <select id="typeOfBoiler" class="survey-question inputbox">
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 2>Normal</option>
-    <option style = "background-color: #127F00 " value = 3>Combination boiler (No hot water cylinder)</option>
-    <option style = "background-color: #127F00 " value = 3>Condensing boiler</option>
+    <option style = "background-color: #7CC808 " value = 3>Combination boiler (No hot water cylinder)</option>
+    <option style = "background-color: #127F00 " value = 4>Condensing boiler</option>
     <option value = 1>Back boiler</option>
     <option value = 2>Range cooker</option>
     <option value = 2>Combined primart storage unit</option>
@@ -208,14 +203,14 @@
   </div>
 
   <select id="typeOfFuel" class="survey-question inputbox">
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 2>Bulk LPG</option>
     <option style = "background-color: #127F00 " value = 4>Mains gas</option>
-    <option style = "background-color: #127F00 " value = 3>Oil</option>
+    <option style = "background-color: #7CC808 " value = 3>Oil</option>
     <option value = 1>House coal</option>
     <option value = 2>Smokeless fuel</option>
-    <option value = 3>Wood</option>
-    <option value = 3>Electricity</option>
+    <option style = "background-color: #7CC808 " value = 3>Wood</option>
+    <option style = "background-color: #7CC808 " value = 3>Electricity</option>
     </optgroup>                   
   </select>
 
@@ -231,7 +226,7 @@
   </div>
           
   <select id="whenBoilerInstalled" class="survey-question inputbox">
-   <option value = "--- Please select ---">--- Please select ---</option>
+   <option value = "">--- Please select ---</option>
    <option value = 2>1997 or earlier</option>
    <option style = "background-color: #127F00 " value = 4>Post 1997</option>
    </optgroup>                   
@@ -245,7 +240,7 @@
  <br></br>             
     <div class="survey-info pull-right"><span class="glyphicon glyphicon-exclamation-sign input-info" ></span>  <small><a href="#">Need more information</a></small></div>
     <select id="boilerServiced" class="survey-question inputbox">
-      <option value = "--- Please select ---">--- Please select ---</option>
+      <option value = "">--- Please select ---</option>
       <option value = 0>Not applicable</option>
       <option style = "background-color: #127F00 " value = 4>Yes</option>
       <option value = 1>No</option>
@@ -263,13 +258,13 @@
   </div>
           
   <select id="heatingControl" class="survey-question inputbox">
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 0>No time or thermostatic control</option>
     <option value = 2>Room thermostat only</option>
     <option value = 2>Programmer thermostat radiator valves</option>
-    <option value = 3>Programmer and room thermostatic radiator valves</option>
+    <option style = "background-color: #7BCD00 " value = 3>Programmer and room thermostatic radiator valves</option>
     <option style = "background-color: #127F00 " value = 4>Programmer room thermostatic and thermostatic radiator valves</option>
-    <option value = 3>Programmer and at least two room thermostats</option>
+    <option style = "background-color: #7BCD00 " value = 3>Programmer and at least two room thermostats</option>
     </optgroup>                   
   </select>
                     
@@ -284,7 +279,7 @@
   </div>
           
   <select id="canYouUseControl" class="survey-question inputbox">
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 0>Not applicable</option>
     <option style = "background-color: #127F00 " value = 4>Yes</option>
     <option value = 2>No</option>
@@ -294,9 +289,8 @@
   </form>
 </div> <!-- Is your roof insulated --> 
                     
-                    <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a href="ber_questioner_4.html">Continue</a></li>
-                </ul>
+                    <button type="button" class="btn btn-success" onclick="collectPage3()">Procede</button>
+            <div class="container ber_error " id ="ber_3"><p><h3></h3></p></div>        
 <script>
 		 
     window.onload = on_load_form_p3_read();
@@ -358,7 +352,7 @@
             <li> | </li>
 			<li> <a href="http://www.digitalskillsacademy.com/"target="new" ><i style="color: #33CCFF " class="fa fa-twitter fa-2x "  ></i> Twitter</a></li>
             <li> | </li>
-			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> youTube</a></li>
+			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> YouTube</a></li>
             <li> | </li>
 			<li> <a href="https://github.com/apolloatdsa/minor-project" target="new"><i style="color: #662A81 " class="fa fa-github-square fa-2x"  ></i> Project on GitHub</a></li>
            

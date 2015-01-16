@@ -100,13 +100,8 @@
               
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="ber_questioner_1.html">BER Questioner 1</a></li>
-                <li><a href="ber_questioner_2.html">BER Questioner 2</a></li>
-                <li><a href="ber_questioner_3.html">BER Questioner 3</a></li>
-                <li><a href="ber_questioner_4.html">BER Questioner 4</a></li>
-                <li><a href="ber_questioner_5.html">BER Questioner 5</a></li>
-                <li><a href="ber_questioner_6.html">BER Questioner 6</a></li>
-                <li><a href="ber_questioner_result.html">BER Questioner Result</a></li>
+                <li><a href="ber_advice_for_householders.html">BER Advice For Householders</a></li>
+                <li><a href="ber_questioner_1.html">BER Pre Test</a></li>
                
               </ul>
             </li>
@@ -145,6 +140,7 @@
     <!-- Page Content second container below top nav bar -->
    <div class="container " id ="display-user-in"><p>&nbsp;</p></div> 
 <div class="container"><!-- InstanceBeginEditable name="EditRegion3" --> <!-- second container below top nav bar   --->
+
 
 	<div class="row">
         <div class="col-xs-10 ">
@@ -187,8 +183,8 @@
                   
   <form id="surveyPage1">
 
-  <select id="area" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id="q1" class="survey-question inputbox" >
+    <option value = "">--- Please select ---</option>
     <option style = "background-color: #127F00 " value = 4>Dense urban</option>
     <option  value= 3>Suburban (Housed spaced well apart)</option>
     <option style = "background-color: #ED2027  " value= 2>Rural</option>
@@ -208,8 +204,8 @@
     <span class="glyphicon glyphicon-exclamation-sign input-info" ></span> <small><a href="#">Need more information</a></small>
   </div>
           
-  <select id="houseType" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id="q2" class="survey-question inputbox" >
+    <option value = "">--- Please select ---</option>
     <option style = "background-color: #127F00 " value = 4>House</option>
     <option value= 2>Bungalow</option>
     <option style = "background-color: #127F00 " value= 4>Flat</option>
@@ -227,8 +223,8 @@
   <span class="glyphicon glyphicon-exclamation-sign input-info" ></span> <small><a href="#">Need more information</a></small>
 </div>
           
-  <select id="detsemi" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id="q3" class="survey-question inputbox" >
+    <option value = "">--- Please select ---</option>
     <option value = 2>Detatched</option>
     <option value= 3>Semi-detatched</option>
     <option style = "background-color: #127F00 " value= 4>Mid-terrace</option>
@@ -247,8 +243,8 @@
 
   </div>
 
-  <select id="builtWhen" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id="q4" class="survey-question inputbox" >
+    <option value = "">--- Please select ---</option>
     <option value = 1>Pre 1900</option>
     <option value= 2>1900-1950</option>
     <option value= 3>1951-1975</option>
@@ -268,8 +264,8 @@
   </span> <small><a href="#">Need more information</a></small>
   </div>
           
-  <select id="rooms" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id="q5" class="survey-question inputbox" >
+    <option value = "">--- Please select ---</option>
     <option value = 2>1</option>
     <option value = 2>2</option>
     <option value = 2>3</option>
@@ -280,8 +276,8 @@
     <option value = 3>8</option>
     <option value = 3>9</option>
     <option style = "background-color: #127F00 " value = 4>10</option>
-    <option value = 4>11</option>
-    <option value = 4>12</option>
+    <option value = 2>11</option>
+    <option value = 2>12</option>
     </optgroup>
     </select>
                    
@@ -296,8 +292,8 @@
 
    </div>
       
-  <select id ="numboffloors" class="survey-question inputbox">
-    <option value = "--- Please select ---">--- Please select ---</option>
+  <select id ="q6" class="survey-question inputbox">
+    <option value = "">--- Please select ---</option>
     <option value = 2>1</option>
     <option style = "background-color: #127F00 " value = 4 >2</option>
     <option value = 2>3</option>
@@ -308,11 +304,9 @@
     </div> <!-- End of well -->
     
     
-          <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a href="ber_questioner_2.html">Continue</a></li>
-          </ul>
+           <button type="button" class="btn btn-success" onclick="collectPage1()">Procede</button>
                     
-  
+  <div class="container ber_error" id ="ber_1"><p><h3></h3></p></div> 
   
           
 
@@ -385,7 +379,7 @@
             <li> | </li>
 			<li> <a href="http://www.digitalskillsacademy.com/"target="new" ><i style="color: #33CCFF " class="fa fa-twitter fa-2x "  ></i> Twitter</a></li>
             <li> | </li>
-			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> youTube</a></li>
+			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> YouTube</a></li>
             <li> | </li>
 			<li> <a href="https://github.com/apolloatdsa/minor-project" target="new"><i style="color: #662A81 " class="fa fa-github-square fa-2x"  ></i> Project on GitHub</a></li>
            

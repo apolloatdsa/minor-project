@@ -2203,3 +2203,16 @@ display: block;
 	color: #000000;
 	}
 
+.ber_error {
+	
+	width: auto;
+	height: auto;
+	padding: 5px 5px 5px 5px;
+	
+	margin: 10px 10px 10px 10px ;
+	
+	}
+
+.ber_error h3 {
+	color: #FF0004;
+	}

@@ -33,7 +33,7 @@ function setM(v){ //v is a value supplied by the calling function -- a variable 
 	document.getElementById("meter").src = "img/meter/"+v+"-meter.png"; // change the image to show position (0 - 15)
 	sessionStorage.meterValue = v;								
 									 
-	}; // end of setM(v)
+	}; // end of setM(v) 
 								
 function readMeter(i){  // i is to identify the i/p either the slider i/p or the number i/p calling the function
 								
@@ -360,104 +360,144 @@ function showResult(){
 	
 	
 	
-	}// end of show Result function
+	}// end of show Result function 
 	
 
 function readArea(){
 		
-	sessionStorage.areaSurvey = document.getElementById("area").value;// read the option value
+	sessionStorage.q1 = document.getElementById("q1").value;// read the option value
 	
-	}// end of readArea
+	}// end of readArea 1
 		
 		
 function houseType(){
 	
-	sessionStorage.houseTypeSurvey = document.getElementById("houseType").value; // read the option value
+	sessionStorage.q2 = document.getElementById("q2").value; // read the option value
 	
-		};		
+		};	// enf house type 2	
 		
 function detsemi(){
 	
-	sessionStorage.detsemiSurvey = document.getElementById("detsemi").value; // read the option value	
+	sessionStorage.q3 = document.getElementById("q3").value; // read the option value	
 	
-	}; // end of detatched or semi
+	}; // end of detatched or semi 3
 	
 	
 function builtWhen(){
 	
-	sessionStorage.builtWhenSurvey = document.getElementById("builtWhen").value; // read the option value
+	sessionStorage.q4 = document.getElementById("q4").value; // read the option value
 	
-	}// built when function 	
+	}// built when function 4	
 
 
 
 function rooms(){
 	
-	sessionStorage.roomsSurvey = document.getElementById("rooms").value; // read the option value
+	sessionStorage.q5 = document.getElementById("q5").value; // read the option value
 	
-	};
+	}; /// end number of rooms 5
 
 
 
 function numboffloors(){
 	
-	sessionStorage.numboffloorsSurvey = document.getElementById("numboffloors").value; // read the option value
+	sessionStorage.q6 = document.getElementById("q6").value; // read the option value
 	
-	}// numboffloors
+	}// numboffloors 6
+	
+	
+
+	
+	
+//########## page 1 ######################################	
+	
 
 function conservatory(){
 	
-	sessionStorage.conservatorySurvey = document.getElementById("conservatory").value; // read the option value
+	sessionStorage.q7 = document.getElementById("conservatory").value; // read the option value
 	
-	}//conservatory
+	}//conservatory 7
 
 
 function conDubGlass(){
 	
-	sessionStorage.conDubGlassSurvey = document.getElementById("conDubGlass").value; // read the option value
+	sessionStorage.q8 = document.getElementById("conDubGlass").value; // read the option value
 	
-	}
+	}// 8
+	
+function homeDubTripG(){
+
+	sessionStorage.q9 = document.getElementById("homeDubTripG").value; // read the option value
+
+	} // 9	
 
 function perCentDTGlazed(){
 	
-	sessionStorage.perCentDTGlazedSurvey = document.getElementById("perCentDTGlazed").value; // read the option value
+	sessionStorage.q10 = document.getElementById("perCentDTGlazed").value; // read the option value
 	
-	}// perCentDTGlazed
+	}// perCentDTGlazed 10
 
 
 function wallsConst(){
 
-	sessionStorage.wallsConstSurvey = document.getElementById("wallsConst").value; // read the option value
+	sessionStorage.q11 = document.getElementById("wallsConst").value; // read the option value
 	
-	}// wallsConst
+	}// wallsConst 11
 
 
 
 function typeOfRoof(){
 
-	sessionStorage.typeOfRoofSurvey = document.getElementById("typeOfRoof").value; // read the option value
+	sessionStorage.q12 = document.getElementById("typeOfRoof").value; // read the option value
 	
-	}
+	}// 12
 
 
 function roofInsul(){
 	
-	sessionStorage.roofInsulSurvey = document.getElementById("roofInsul").value; // read the option value
+	sessionStorage.q13 = document.getElementById("roofInsul").value; // read the option value
 
-	}
-
-
-function homeDubTripG(){
-
-	sessionStorage.homeDubTripGSurvey = document.getElementById("homeDubTripG").value; // read the option value
-
-	}
+	} // 13
 
 
+
+
+
+
+//// ########################## emd  page 2 ##########################
 
 function on_load_form_read() {
 	
-	var areaOption = document.getElementById("area");// event listener for meter survey area
+	if(typeof sessionStorage.q1 == "undefined"){
+		
+	sessionStorage.q1 = ""
+	}
+	
+	if(typeof sessionStorage.q2 == "undefined"){
+		
+	sessionStorage.q2 = ""
+	}
+	if(typeof sessionStorage.q3 == "undefined"){
+		
+	sessionStorage.q3 = ""
+	}
+	
+	if(typeof sessionStorage.q4 == "undefined"){
+		
+	sessionStorage.q4 = ""
+	}
+	if(typeof sessionStorage.q5 == "undefined"){
+		
+	sessionStorage.q5 = ""
+	}
+	if(typeof sessionStorage.q6 == "undefined"){
+		
+	sessionStorage.q6 = ""
+	}
+	
+	
+	
+	var areaOption = document.getElementById("q1");// event listener for meter survey area
 	 
 	if(areaOption.addEventListener){
 	
@@ -465,42 +505,42 @@ function on_load_form_read() {
 	 };
 	   
 
-	var houseTypeOption = document.getElementById("houseType");// event listener for meter survey house type
+	var houseTypeOption = document.getElementById("q2");// event listener for meter survey house type
 	 
 	if(houseTypeOption.addEventListener){
     houseTypeOption.addEventListener("change", houseType );
 	};  
 		
   
-	var detsemiOption = document.getElementById("detsemi");// event listener for meter survey house type
+	var detsemiOption = document.getElementById("q3");// event listener for meter survey house type
 	 
 	if(detsemiOption.addEventListener){
     detsemiOption.addEventListener("change", detsemi );
 	};  
    
    
-	var builtWhenOption = document.getElementById("builtWhen");// event listener for meter survey house type
+	var builtWhenOption = document.getElementById("q4");// event listener for meter survey house type
 	 
 	if(builtWhenOption.addEventListener){
     builtWhenOption.addEventListener("change", builtWhen );
 	};  
 	  
-	  
+	  // rooms
+	   
+	var roomsOption = document.getElementById("q5");// event listener for meter survey area
+	 
+	if(roomsOption.addEventListener){
+    roomsOption.addEventListener("change", rooms );
+	}; 
 	
-	var numboffloorsOption = document.getElementById("numboffloors");// event listener for meter survey area
+	var numboffloorsOption = document.getElementById("q6");// event listener for meter survey area
 	 
 	if(numboffloorsOption.addEventListener){
     numboffloorsOption.addEventListener("change", numboffloors );
 	};
 	   
 	   
-	 // rooms
-	   
-	var roomsOption = document.getElementById("rooms");// event listener for meter survey area
-	 
-	if(roomsOption.addEventListener){
-    roomsOption.addEventListener("change", rooms );
-	};
+	
 	   
 	   
    
@@ -511,13 +551,44 @@ function on_load_form_read() {
 	
 function on_load_form_p2_read(){
 	
+	if(typeof sessionStorage.q7 == "undefined"){
+		
+	sessionStorage.q7 = ""
+	}
+	
+	if(typeof sessionStorage.q8 == "undefined"){
+		
+	sessionStorage.q8 = ""
+	}
+	if(typeof sessionStorage.q9 == "undefined"){
+		
+	sessionStorage.q9 = ""
+	}
+	
+	if(typeof sessionStorage.q10 == "undefined"){
+		
+	sessionStorage.q10 = ""
+	}
+	if(typeof sessionStorage.q11 == "undefined"){
+		
+	sessionStorage.q11 = ""
+	}
+	if(typeof sessionStorage.q12 == "undefined"){
+		
+	sessionStorage.q12 = ""
+	}
+	if(typeof sessionStorage.q13 == "undefined"){
+		
+	sessionStorage.q13 = ""
+	}
+	
 
 // conservatory
 	var conservatoryOption = document.getElementById("conservatory");// event listener for meter survey area
 	 
 	if(conservatoryOption.addEventListener){
     conservatoryOption.addEventListener("change", conservatory );
-	};
+	}; 
 
 // conDubGlass
 var conDubGlassOption = document.getElementById("conDubGlass");// event listener for meter survey area
@@ -586,51 +657,86 @@ var homeDubTripGOption = document.getElementById("homeDubTripG");// event listen
 
 function sourceOfHeat(){
 	
-	sessionStorage.sourceOfHeatSurvey = document.getElementById("sourceOfHeat").value; // read the option value
+	sessionStorage.q14 = document.getElementById("sourceOfHeat").value; // read the option value
 	
-	}
+	} //14
 
 
 function typeOfBoiler(){
 
-	sessionStorage.typeOfBoilerSurvey = document.getElementById("typeOfBoiler").value; // read the option value
+	sessionStorage.q15 = document.getElementById("typeOfBoiler").value; // read the option value
 	
-	}
+	} //  15
 
 function typeOfFuel(){
 	
-	sessionStorage.typeOfFuelSurvey = document.getElementById("typeOfFuel").value; // read the option value
+	sessionStorage.q16 = document.getElementById("typeOfFuel").value; // read the option value
 	
-	}
+	} // 16
 	
 	
 function whenBoilerInstalled(){
 	
-	sessionStorage.whenBoilerInstalledSurvey = document.getElementById("whenBoilerInstalled").value; // read the option value
+	sessionStorage.q17 = document.getElementById("whenBoilerInstalled").value; // read the option value
 	
-	}
+	} // 17
 
 function boilerServiced(){
 	
-	sessionStorage.boilerServicedSurvey = document.getElementById("boilerServiced").value; // read the option value
+	sessionStorage.q18 = document.getElementById("boilerServiced").value; // read the option value
 	
-	}
+	} // 18
 
 function heatingControl(){
 	
-	sessionStorage.heatingControlSurvey = document.getElementById("heatingControl").value; // read the option value
+	sessionStorage.q19 = document.getElementById("heatingControl").value; // read the option value
 	
-	}
+	} // 19
 	
 	
 function canYouUseControl(){
 	
-	sessionStorage.canYouUseControlSurvey = document.getElementById("canYouUseControl").value; // read the option value
+	sessionStorage.q20 = document.getElementById("canYouUseControl").value; // read the option value
 
-	}; // end of 
+	}; // end of  20
 	
 
 function on_load_form_p3_read(){
+	
+	
+	if(typeof sessionStorage.q14 == "undefined"){
+		
+	sessionStorage.q14 = ""
+	}
+	
+	if(typeof sessionStorage.q15 == "undefined"){
+		
+	sessionStorage.q15 = ""
+	}
+	if(typeof sessionStorage.q16 == "undefined"){
+		
+	sessionStorage.q16 = ""
+	}
+	
+	if(typeof sessionStorage.q17 == "undefined"){
+		
+	sessionStorage.q17 = ""
+	}
+	if(typeof sessionStorage.q18 == "undefined"){
+		
+	sessionStorage.q18 = ""
+	}
+	if(typeof sessionStorage.q19 == "undefined"){
+		
+	sessionStorage.q19 = ""
+	}
+	if(typeof sessionStorage.q20 == "undefined"){
+		
+	sessionStorage.q20 = ""
+	}
+	
+	
+	
 		
 //sourceOfHeat
 
@@ -696,50 +802,83 @@ var canYouUseControlOption = document.getElementById("canYouUseControl");// even
 
 function waterHeater(){
 	
-	sessionStorage.waterHeaterSurvey = document.getElementById("waterHeater").value; // read the option value
+	sessionStorage.q21 = document.getElementById("waterHeater").value; // read the option value
 	
-	};
+	}; //21
 
 function cylinder(){
 	
-	sessionStorage.cylinderSurvey = document.getElementById("cylinder").value; // read the option value
+	sessionStorage.q22 = document.getElementById("cylinder").value; // read the option value
 	
-	};
+	}; // 22
 
 function showerBath(){
 	
-	sessionStorage.showerBathSurvey = document.getElementById("showerBath").value; // read the option value
+	sessionStorage.q23 = document.getElementById("showerBath").value; // read the option value
 	
-	};
+	}; // 23
 
 function runningTap(){
 	
-	sessionStorage.runningTapSurvey = document.getElementById("runningTap").value; // read the option value
+	sessionStorage.q24 = document.getElementById("runningTap").value; // read the option value
 	
-	}
+	} // 24
 
 function cylinderSize(){
 	
-	sessionStorage.cylinderSizeSurvey = document.getElementById("cylinderSize").value; // read the option value
+	sessionStorage.q25 = document.getElementById("cylinderSize").value; // read the option value
 	
-	}
+	} // 25
 function cylinderTermo(){
 	
-	sessionStorage.cylinderTermoSurvey = document.getElementById("cylinderTermo").value; // read the option value
+	sessionStorage.q26 = document.getElementById("cylinderTermo").value; // read the option value
 	
-	}
+	}// 26
 	
 function cylinderInsulType(){
 	
-	sessionStorage.cylinderInsulTypeSurvey = document.getElementById("cylinderInsulType").value; // read the option value
+	sessionStorage.q27 = document.getElementById("cylinderInsulType").value; // read the option value
 	
-	}
+	} // 27
 
 
 
 function on_load_form_p4_read(){
 	
 	//waterHeater
+	if(typeof sessionStorage.q21 == "undefined"){
+		
+	sessionStorage.q21 = ""
+	}
+	
+	if(typeof sessionStorage.q22 == "undefined"){
+		
+	sessionStorage.q22 = ""
+	}
+	if(typeof sessionStorage.q23 == "undefined"){
+		
+	sessionStorage.q23 = ""
+	}
+	
+	if(typeof sessionStorage.q24 == "undefined"){
+		
+	sessionStorage.q24 = ""
+	}
+	if(typeof sessionStorage.q25 == "undefined"){
+		
+	sessionStorage.q25 = ""
+	}
+	if(typeof sessionStorage.q26 == "undefined"){
+		
+	sessionStorage.q26 = ""
+	}
+	if(typeof sessionStorage.q27 == "undefined"){
+		
+	sessionStorage.q27 = ""
+	}
+	
+	
+	
 	
 	var waterHeaterOption = document.getElementById("waterHeater");// event listener for meter survey area
 	 
@@ -799,27 +938,47 @@ function on_load_form_p4_read(){
 
 function hotWaterSolar(){
 	
-	sessionStorage.hotWaterSolarSurvey = document.getElementById("hotWaterSolar").value; // read the option value
+	sessionStorage.q28 = document.getElementById("hotWaterSolar").value; // read the option value
 
-	}
+	} // 28
 
 function pvPanels(){
 	
-	sessionStorage.pvPanelsSurvey = document.getElementById("pvPanels").value; // read the option value
+	sessionStorage.q29 = document.getElementById("pvPanels").value; // read the option value
 	
-	}
+	} // 29 
 
 function windTurbine(){
 	
-	sessionStorage.windTurbineSurvey = document.getElementById("windTurbine").value; // read the option value
+	sessionStorage.q30 = document.getElementById("windTurbine").value; // read the option value
 	
-	}
+	} // 30
 
 
 
 	
 
 function on_load_form_p5_read(){
+	
+	
+	if(typeof sessionStorage.q28 == "undefined"){
+		
+	sessionStorage.q28 = ""
+	}
+	
+	if(typeof sessionStorage.q29 == "undefined"){
+		
+	sessionStorage.q29 = ""
+	}
+	if(typeof sessionStorage.q30 == "undefined"){
+		
+	sessionStorage.q30 = ""
+	}
+	
+	
+	
+	
+	
 	
 	//hotWaterSolar
 	var hotWaterSolarOption = document.getElementById("hotWaterSolar");// event listener for meter survey area
@@ -845,54 +1004,101 @@ function on_load_form_p5_read(){
 	
 	}// end of on_load_form_p5_read()
 	
+	
+	
+	
 
 function singleOrDualMeter(){
 	
-	sessionStorage.singleOrDualMeterSurvey = document.getElementById("singleOrDualMeter").value; // read the option value
+	sessionStorage.q31 = document.getElementById("singleOrDualMeter").value; // read the option value
 	
-	}
+	} // 31
 
 
 function energyBulbs(){
 	
 	
-	sessionStorage.energyBulbsSurvey = document.getElementById("energyBulbs").value; // read the option value
+	sessionStorage.q32 = document.getElementById("energyBulbs").value; // read the option value
 	
-	}
+	} // 32
 
 function washTemp(){
 	
-	sessionStorage.washTempSurvey = document.getElementById("washTemp").value; // read the option value
+	sessionStorage.q33 = document.getElementById("washTemp").value; // read the option value
 	
-	}
+	} // 33
 	
 	
 function waitForFull(){
 	
-	sessionStorage.waitForFullSurvey = document.getElementById("waitForFull").value; // read the option value
+	sessionStorage.q34 = document.getElementById("waitForFull").value; // read the option value
 	
-	}
+	} // 34
 
-function tumbleDry(){
-	
-	sessionStorage.tumbleDrySurvey = document.getElementById("tumbleDry").value; // read the option value
-	
-	}
+
 	
 function leftOn(){
 	
-	sessionStorage.leftOnSurvey = document.getElementById("leftOn").value; // read the option value
+	sessionStorage.q35 = document.getElementById("leftOn").value; // read the option value
 	
-	}
+	} // 35
+	
+function tumbleDry(){
+	
+	sessionStorage.q36 = document.getElementById("tumbleDry").value; // read the option value
+	
+	} // 36	
 	
 function boilKettle(){
 	
-	sessionStorage.boilKettleSurvey = document.getElementById("boilKettle").value; // read the option value
+	sessionStorage.q37 = document.getElementById("boilKettle").value; // read the option value
 	
-	} 	
+	} // 37
 	
 
+
+
+
+
 function on_load_form_p6_read(){
+	
+	
+	if(typeof sessionStorage.q31 == "undefined"){
+		
+	sessionStorage.q31 = ""
+	}
+	
+	if(typeof sessionStorage.q32 == "undefined"){
+		
+	sessionStorage.q32 = ""
+	}
+	if(typeof sessionStorage.q33 == "undefined"){
+		
+	sessionStorage.q33 = ""
+	}
+	
+	if(typeof sessionStorage.q34 == "undefined"){
+		
+	sessionStorage.q34 = ""
+	}
+	if(typeof sessionStorage.q35 == "undefined"){
+		
+	sessionStorage.q35 = ""
+	}
+	if(typeof sessionStorage.q36 == "undefined"){
+		
+	sessionStorage.q36 = ""
+	}
+	if(typeof sessionStorage.q37 == "undefined"){
+		
+	sessionStorage.q37 = ""
+	}
+	
+	
+	
+	
+	
+	
 	
 	// singleOrDualMeter
 	var singleOrDualMeterOption = document.getElementById("singleOrDualMeter");// event listener for meter survey area
@@ -946,3 +1152,257 @@ function on_load_form_p6_read(){
 	
 	
 	}// end of on_load_form_p6_read()
+
+
+
+function collectPage1(){
+	
+	
+	if(!sessionStorage.q1 || !sessionStorage.q2 || !sessionStorage.q3 || !sessionStorage.q4 || !sessionStorage.q5 || !sessionStorage.q6 ){
+		
+		
+		
+		if (!sessionStorage.q1){document.getElementById("ber_1").innerHTML = "<h3>please select the area your home is in.</h3> "}
+		else if (!sessionStorage.q2){document.getElementById("ber_1").innerHTML = "<h3>What type of home.</h3> "}
+		else if (!sessionStorage.q3){document.getElementById("ber_1").innerHTML = "<h3>Is your house detatched.</h3> "}
+		else if (!sessionStorage.q4){document.getElementById("ber_1").innerHTML = "<h3>When was your house built.</h3> "}
+		else if (!sessionStorage.q5){document.getElementById("ber_1").innerHTML = "<h3>How many rooms does your home have.</h3> "}
+		else if (!sessionStorage.q6){document.getElementById("ber_1").innerHTML = "<h3>How many floors does your home have.</h3> "} 
+		else{alert(" Here ")}
+		
+		}
+		
+		
+		if(sessionStorage.q1 && sessionStorage.q2 && sessionStorage.q3 && sessionStorage.q4 && sessionStorage.q5 && sessionStorage.q6 ){
+			window.open("ber_questioner_2.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage1() 
+	
+
+
+function collectPage2(){
+	
+	
+	if(!sessionStorage.q7 || !sessionStorage.q8 || !sessionStorage.q9 || !sessionStorage.q10 || !sessionStorage.q11 || !sessionStorage.q12 || !sessionStorage.q13){
+		
+		
+		
+		if (!sessionStorage.q7){document.getElementById("ber_2").innerHTML = "<h3>Is there a heated conservatory seperated from the main house by a door.</h3> "}
+		else if (!sessionStorage.q8){document.getElementById("ber_2").innerHTML = "<h3>Is the conservatory double glazed</h3> "}
+		else if (!sessionStorage.q9){document.getElementById("ber_2").innerHTML = "<h3>Is your home double or triple glazed.</h3> "}
+		else if (!sessionStorage.q10){document.getElementById("ber_2").innerHTML = "<h3>What percentage of your home is double or triple glazed.</h3> "}
+		else if (!sessionStorage.q11){document.getElementById("ber_2").innerHTML = "<h3>How are the main walls of your house constructed.</h3> "}
+		else if (!sessionStorage.q12){document.getElementById("ber_2").innerHTML = "<h3>What type of roof does your home have.</h3> "}
+		else if (!sessionStorage.q13){document.getElementById("ber_2").innerHTML = "<h3>How is your roof insulated.</h3> "}
+		else{alert(" Here page two")}
+		
+		}
+		
+		
+		if(sessionStorage.q7 && sessionStorage.q8 && sessionStorage.q9 && sessionStorage.q10 && sessionStorage.q11 && sessionStorage.q12 && sessionStorage.q13 ){
+			window.open("ber_questioner_3.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage2() 
+
+function collectPage3(){
+	
+	
+	if(!sessionStorage.q14 || !sessionStorage.q15 || !sessionStorage.q16 || !sessionStorage.q17 || !sessionStorage.q18 || !sessionStorage.q19 || !sessionStorage.q20){
+	
+		if (!sessionStorage.q14){document.getElementById("ber_3").innerHTML = "<h3>What is your main source of heat.</h3> "}
+		else if (!sessionStorage.q15){document.getElementById("ber_3").innerHTML = "<h3>What type of boiler do you have.</h3> "}
+		else if (!sessionStorage.q16){document.getElementById("ber_3").innerHTML = "<h3>What is the main type of fuel used.</h3> "}
+		else if (!sessionStorage.q17){document.getElementById("ber_3").innerHTML = "<h3>When was your boiler installed.</h3> "}
+		else if (!sessionStorage.q18){document.getElementById("ber_3").innerHTML = "<h3>Is your boiler maintainer and serviced regularly.</h3> "}
+		else if (!sessionStorage.q19){document.getElementById("ber_3").innerHTML = "<h3>What heating controls do you have.</h3> "}
+		else if (!sessionStorage.q20){document.getElementById("ber_3").innerHTML = "<h3>Do you know how to control your heating.</h3> "} 
+		else{alert(" Here page three")}
+		
+		}
+		
+		
+		if(sessionStorage.q14 && sessionStorage.q15 && sessionStorage.q16 && sessionStorage.q17 && sessionStorage.q18 && sessionStorage.q19 && sessionStorage.q20 ){
+			window.open("ber_questioner_4.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage3() 
+
+
+function collectPage4(){
+	
+	
+	if(!sessionStorage.q21 || !sessionStorage.q22 || !sessionStorage.q23 || !sessionStorage.q24 || !sessionStorage.q25 || !sessionStorage.q26 || !sessionStorage.q27){
+	
+		if (!sessionStorage.q21){document.getElementById("ber_4").innerHTML = "<h3>How is your water heated.</h3> "}
+		else if (!sessionStorage.q22){document.getElementById("ber_4").innerHTML = "<h3>Is there a hot water cylinder.</h3> "}
+		else if (!sessionStorage.q23){document.getElementById("ber_4").innerHTML = "<h3>Do you usually take a shower or a bath.</h3> "}
+		else if (!sessionStorage.q24){document.getElementById("ber_4").innerHTML = "<h3>When you need hot water do you keep the tap running.</h3> "}
+		else if (!sessionStorage.q25){document.getElementById("ber_4").innerHTML = "<h3>How large is your hot water cylinder.</h3> "}
+		else if (!sessionStorage.q26){document.getElementById("ber_4").innerHTML = "<h3>Is there a thermostat for the cylinder.</h3> "}
+		else if (!sessionStorage.q27){document.getElementById("ber_4").innerHTML = "<h3>Is the cylinder insulated and if so how thick is the insulation.</h3> "}
+		else{alert(" Here page three")}
+		
+		}
+		
+		
+		if(sessionStorage.q21 && sessionStorage.q22 && sessionStorage.q23 && sessionStorage.q24 && sessionStorage.q25 && sessionStorage.q26 && sessionStorage.q27  ){
+			window.open("ber_questioner_5.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage4() 
+
+
+
+function collectPage5(){
+	
+	
+	if(!sessionStorage.q28 || !sessionStorage.q29 || !sessionStorage.q30 ){
+	
+		if (!sessionStorage.q28){document.getElementById("ber_5").innerHTML = "<h3>Do you have solar panels that heat the water for the house.</h3> "}//{alert("") }
+		else if (!sessionStorage.q29){document.getElementById("ber_5").innerHTML = "<h3>Do you have photovoltaic PV panels for generating electricity..</h3> "}
+		else if (!sessionStorage.q30){document.getElementById("ber_5").innerHTML = "<h3>Do you have a wind turbine for generating electricity.</h3> "}//{alert("") }
+		
+		else{alert(" Here page three")}
+		
+		}
+		
+		
+		if(sessionStorage.q28 && sessionStorage.q29 && sessionStorage.q30   ){
+			window.open("ber_questioner_6.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage5() 
+
+
+
+
+
+
+function collectPage6(){
+	
+	
+	if(!sessionStorage.q31 || !sessionStorage.q32 || !sessionStorage.q33 || !sessionStorage.q34 || !sessionStorage.q35 || !sessionStorage.q36 || !sessionStorage.q37){
+	
+		if (!sessionStorage.q31){document.getElementById("ber_6").innerHTML = "<h3>What type of meter do you have.</h3> "}
+		else if (!sessionStorage.q32){document.getElementById("ber_6").innerHTML = "<h3>What percentage of your lighting have energy bulbs.</h3> "}
+		else if (!sessionStorage.q33){document.getElementById("ber_6").innerHTML = "<h3>What temperature do you normally wash your clothes at.</h3> "}
+		else if (!sessionStorage.q34){document.getElementById("ber_6").innerHTML = "<h3>Do you normally wait until the dishwasher and or washing machine is full before switching them on.</h3> "}
+		else if (!sessionStorage.q35){document.getElementById("ber_6").innerHTML = "<h3>Are any of your appliances reguarly left switched on.</h3> "}
+		else if (!sessionStorage.q36){document.getElementById("ber_6").innerHTML = "<h3>Do you dry most of your clothes in a tumble dryer.</h3> "}
+		else if (!sessionStorage.q37){document.getElementById("ber_6").innerHTML = "<h3>Do you only boil the water you need when you boil the kettle.</h3> "}//{alert("") }
+		else{alert(" Here page three")}
+		 
+		}
+		
+		
+		if(sessionStorage.q31 && sessionStorage.q32 && sessionStorage.q33 && sessionStorage.q34 && sessionStorage.q35 && sessionStorage.q36 && sessionStorage.q37  ){
+			
+			getMeterValue()
+			//window.open("ber_questioner_result.html", "_self");
+			}
+		
+		
+		// end of if
+	
+	}// end of collectPage6() 
+
+
+function getMeterValue(){
+
+var zeros = 0	
+var poor = 0
+var fair = 0
+var good = 0
+var exec = 0
+var trap = 0
+var countQ = 0	
+var meterValue = 0	
+	
+	
+	for(var i=1; i<38; i++){
+		
+		countQ++
+		
+		if(sessionStorage.getItem("q"+i) == 0){
+			
+			zeros++;
+			
+			}
+		else if (sessionStorage.getItem("q"+i) == 1){	
+			
+			poor++;
+			
+		}
+		else if (sessionStorage.getItem("q"+i) == 2){	
+			
+			fair++;
+			
+		}	
+		else if (sessionStorage.getItem("q"+i) == 3){	
+			
+			good++;
+			
+		}	
+		else if (sessionStorage.getItem("q"+i) == 4){	
+			
+			exec++;
+			
+			
+		}	
+		else{ trap++
+			
+			alert(i)
+		
+			}
+		
+		
+		}// end of if
+	
+	
+//	alert("Number of Zeros is   "+zeros+"\nNumber of Poor is   "+poor+"\nNumber of Fair is   "+fair+"\nNumber of Good is   "+good+"\nNumber of Execellent is   "+exec+"\nNumber of Questions is   "+countQ+ "\nNumber of Traps is   "+trap+ "\n" )
+	
+	
+	if (exec >= 34){
+				
+				sessionStorage.meterValue = 14
+				window.open("ber_questioner_result.html", "_self");
+			}
+	else if (exec >= 30){
+				
+				sessionStorage.meterValue = 13
+				window.open("ber_questioner_result.html", "_self");
+			}
+	else if (exec >= 28){
+				
+				sessionStorage.meterValue = 12
+				window.open("ber_questioner_result.html", "_self");
+			}
+	else if (exec >= 24){
+				
+				sessionStorage.meterValue = 11
+				window.open("ber_questioner_result.html", "_self");
+			}else{
+				sessionStorage.meterValue = 8
+				window.open("ber_questioner_result.html", "_self");
+				
+				}
+	
+	
+	} // end of if (exec >= 25)

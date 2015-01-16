@@ -100,13 +100,8 @@
               
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="ber_questioner_1.html">BER Questioner 1</a></li>
-                <li><a href="ber_questioner_2.html">BER Questioner 2</a></li>
-                <li><a href="ber_questioner_3.html">BER Questioner 3</a></li>
-                <li><a href="ber_questioner_4.html">BER Questioner 4</a></li>
-                <li><a href="ber_questioner_5.html">BER Questioner 5</a></li>
-                <li><a href="ber_questioner_6.html">BER Questioner 6</a></li>
-                <li><a href="ber_questioner_result.html">BER Questioner Result</a></li>
+                <li><a href="ber_advice_for_householders.html">BER Advice For Householders</a></li>
+                <li><a href="ber_questioner_1.html">BER Pre Test</a></li>
                
               </ul>
             </li>
@@ -176,7 +171,7 @@
 
     <select id="singleOrDualMeter" class="survey-question inputbox" >
                     
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 3>Single meter</option>
     <option style = "background-color: #127F00 " value= 4>Dual meter (Economy tariff and Standard)</option>
                         
@@ -200,7 +195,7 @@
   <br></br>							
                   
 	<select id="energyBulbs" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 1>None</option>
     <option value= 2>25%</option>
     <option value = 2>50%</option>
@@ -223,11 +218,11 @@
   <br></br>							
                   
 	<select id="washTemp" class="survey-question inputbox" >
-  <option value = "--- Please select ---">--- Please select ---</option>
+  <option value = "">--- Please select ---</option>
     <option value = 2>30 (Or below)</option>
     <option style = "background-color: #127F00 " value= 4>40</option>
-    <option value = 3>50</option>
-    <option value= 3>60</option>
+    <option style = "background-color: #7BCD00 " value = 3>50</option>
+    <option style = "background-color: #7BCD00 " value= 3>60</option>
     <option value= 0>Rather not say</option>
   </optgroup>
                     
@@ -248,10 +243,10 @@
   <br></br>							
                   
 	<select id="waitForFull" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
-    <option style = "background-color: #127F00 " value = 3>Yes</option>
+    <option value = "">--- Please select ---</option>
+    <option style = "background-color: #127F00 " value = 4>Yes</option>
     <option value= 1>No</option>
-    <option value = "Not Applicable">Not Applicable</option>
+    <option value = 0>Not Applicable</option>
   </optgroup>
   </select>
                     
@@ -271,7 +266,7 @@
   <br></br>							
                   
 		<select id="leftOn" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 2>Yes</option>
     <option style = "background-color: #127F00 " value= 4>No</option>
     <option value = 0>Not Applicable</option>
@@ -293,7 +288,7 @@
                   
 	<select id="tumbleDry" class="survey-question inputbox" >
                     
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 2>Yes</option>
     <option style = "background-color: #127F00 " value= 4>No</option>
     <option value = 0>Not Applicable</option>
@@ -313,7 +308,7 @@
   <br></br>							
                   
 	<select id="boilKettle" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option style = "background-color: #127F00 " value = 4>Yes</option>
     <option value= 2>No</option>
     <option value = 0>Not Applicable</option>
@@ -326,10 +321,9 @@
   
   
            </form>
-    <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a href="ber_questioner_6.html">Continue</a></li>
-                </ul>
-                
+    
+                	<button type="button" class="btn btn-success" onclick="collectPage6()">Procede</button>
+                    <div class="container ber_error " id ="ber_6"><p><h3></h3></p></div>
            <script>
 		 
     window.onload = on_load_form_p6_read();
@@ -390,7 +384,7 @@
             <li> | </li>
 			<li> <a href="http://www.digitalskillsacademy.com/"target="new" ><i style="color: #33CCFF " class="fa fa-twitter fa-2x "  ></i> Twitter</a></li>
             <li> | </li>
-			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> youTube</a></li>
+			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> YouTube</a></li>
             <li> | </li>
 			<li> <a href="https://github.com/apolloatdsa/minor-project" target="new"><i style="color: #662A81 " class="fa fa-github-square fa-2x"  ></i> Project on GitHub</a></li>
            

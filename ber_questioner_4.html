@@ -100,13 +100,8 @@
               
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="ber_questioner_1.html">BER Questioner 1</a></li>
-                <li><a href="ber_questioner_2.html">BER Questioner 2</a></li>
-                <li><a href="ber_questioner_3.html">BER Questioner 3</a></li>
-                <li><a href="ber_questioner_4.html">BER Questioner 4</a></li>
-                <li><a href="ber_questioner_5.html">BER Questioner 5</a></li>
-                <li><a href="ber_questioner_6.html">BER Questioner 6</a></li>
-                <li><a href="ber_questioner_result.html">BER Questioner Result</a></li>
+                <li><a href="ber_advice_for_householders.html">BER Advice For Householders</a></li>
+                <li><a href="ber_questioner_1.html">BER Pre Test</a></li>
                
               </ul>
             </li>
@@ -174,7 +169,7 @@
 
   <select id="waterHeater" class="survey-question inputbox" >
                     
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option style = "background-color: #127F00 " value = 4>From the main heating system</option>
     <option value= 3>Electric emmersion heater</option>
     <option style = "background-color: #127F00 " value= 4>Instant electric heater</option>
@@ -194,8 +189,8 @@
   </div>
           
   <select id="cylinder" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
-    <option style = "background-color: #127F00 " value = 3>Yes</option>
+    <option value = "">--- Please select ---</option>
+    <option style = "background-color: #127F00 " value = 4>Yes</option>
     <option value= 2>No</option>
   </optgroup>                   
     </select>
@@ -211,9 +206,9 @@
   </div>
           
   <select id="showerBath" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 0>Rather not say</option>
-    <option style = "background-color: #127F00 " value= 3>Shower</option>
+    <option style = "background-color: #127F00 " value= 4>Shower</option>
     <option value= 2>Bath</option>
     </optgroup>
   </select>
@@ -230,9 +225,9 @@
           
   <select id="runningTap" class="survey-question inputbox" >
                    
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 0>Rather not say</option>
-    <option style = "background-color: #127F00 " value = 3>No</option>
+    <option style = "background-color: #127F00 " value = 4>No</option>
     <option value = 1>Yes</option>
     </optgroup>
                     
@@ -250,7 +245,7 @@
   <div class="survey-info pull-right"><span class="glyphicon glyphicon-exclamation-sign input-info" >
     </span> <small><a href="#">Need more information</a></small></div>
   <select id="cylinderSize" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 1>No access</option>
     <option style = "background-color: #127F00 " value = 4>Normal (Up to 90cm tall)</option>
     <option value = 3>Medium (Between 90 and 135cm)</option>
@@ -271,7 +266,7 @@
   </div>
           
   <select id="cylinderTermo" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 2>No</option>
     <option style = "background-color: #127F00 " value = 4>Yes</option>
     </select>
@@ -288,11 +283,11 @@
   </div>
           
   <select id="cylinderInsulType" class="survey-question inputbox" >
-    <option value = "--- Please select ---">--- Please select ---</option>
+    <option value = "">--- Please select ---</option>
     <option value = 1>None</option>
     <option value = 2>Thin Jacket (Up to 100mm)</option>
     <option style = "background-color: #127F00 " value = 4>Thick jacket (Over 100mm)</option>
-    <option value = 3>Thin Foam (Up to 38mm)</option>
+    <option style = "background-color: #7BCD00 " value = 3>Thin Foam (Up to 38mm)</option>
     <option style = "background-color: #127F00 " value = 4>Thick Foam (Over 38mm)</option>
   </select>
   </form> <!-- End form page 1 -->
@@ -303,10 +298,8 @@
               
 
 
-              <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a href="ber_questioner_5.html">Continue</a></li>
-                </ul>
-                
+              <button type="button" class="btn btn-success" onclick="collectPage4()">Procede</button>
+                <div class="container ber_error " id ="ber_4"><p><h3></h3></p></div> 
            <script>
 		 
     window.onload = on_load_form_p4_read();
@@ -375,7 +368,7 @@
             <li> | </li>
 			<li> <a href="http://www.digitalskillsacademy.com/"target="new" ><i style="color: #33CCFF " class="fa fa-twitter fa-2x "  ></i> Twitter</a></li>
             <li> | </li>
-			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> youTube</a></li>
+			<li> <a href="https://www.youtube.com/watch?v=-yYB3MjgYgY" target="new"><i style="color: #c4302b " class="fa fa-youtube fa-2x"  ></i> YouTube</a></li>
             <li> | </li>
 			<li> <a href="https://github.com/apolloatdsa/minor-project" target="new"><i style="color: #662A81 " class="fa fa-github-square fa-2x"  ></i> Project on GitHub</a></li>
            
