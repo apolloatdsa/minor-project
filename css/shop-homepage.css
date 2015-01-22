@@ -2216,3 +2216,112 @@ display: block;
 .ber_error h3 {
 	color: #FF0004;
 	}
+	
+.meter-result {
+	border-right: thick solid #E3DDD8;
+	border-left: thick solid #E3DDD8;
+	width: auto;
+	display: block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	}
+.ber_poor {
+	background-color: #E36805;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-size: large;
+	width: auto;
+	display: block;
+	border-left: thin solid #E36805;
+	border-radius: 20px;
+	}
+.ber_fair {
+	background-color: #F0DF02;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-size: large;
+	width: auto;
+	display: block;
+	border-left: thin solid #E36805;
+	border-radius: 20px;
+	}
+.ber_good {
+	background-color: #8DC000;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-size: large;
+	width: auto;
+	display: block;
+	border-left: thin solid #E36805;
+	border-radius: 20px;
+	}
+.ber_exec {
+	background-color: #04B100;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-size: large;
+	width: auto;
+	display: block;
+	border-left: thin solid #E36805;
+	border-radius: 20px;
+	}
+.ber_dna {
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-size: large;
+	width: auto;
+	display: block;
+	border-left: thin solid #E36805;
+	border-radius: 20px;
+	}
+
+
+.link-active {
+	background-color: #DFDFDF;
+	width: auto;
+	height: auto;
+	border-radius: 30px;
+	border: thin solid #DFDFDF;
+	}

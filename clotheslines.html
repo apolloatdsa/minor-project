@@ -8,7 +8,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Shop Homepage - Start Bootstrap Template</title>
+<title>This titel should be the same as the first H1 tag on the page</title>
+<meta name="keywords" content="Client SEO team will decide keyword and density">
+<meta name="description" content="Description should describe the page contents.">
 <!-- InstanceEndEditable -->
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -22,6 +24,7 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <script src="email/validation.js" type="text/javascript"></script>
 <script src="js/custom.js" type="text/javascript"></script>
+<script src="js/jquery.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media  queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,33 +61,27 @@
         
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li id="home-link-head"><a href="index.html">Home</a></li>
             
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop <span class="caret"></span></a>
+            <li id="shop-dw"  class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="mobile_site.html">Mobile Site</a></li>
-                <li><a href="breezecatcher.html">Breezecatcher </a></li>
-                <li><a href="product_3.html">Product 3</a></li>
-                <li><a href="product_4.html">Product 4</a></li>
-                <li><a href="product_5.html">Product 5</a></li>
-                <li><a href="product_6.html">Product 6</a></li>
-                <li><a href="product_7.html">Product 7</a></li>
+              	<li><a href="clotheslines.html">Clotheslines </a></li>
+                <li><a href="meter_plugs.html">Meter Plugs </a></li>
+                <li><a href="product_3.html">Product 3 </a></li>
+                <li><a href="product_4.html">Product 4 </a></li>
+                <li><a href="reviews.html">Product reviews </a></li>
                
               </ul>
             </li>
             
             
             
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Electric <span class="caret"></span></a>
+            <li id="smart-electric-dw" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Electric <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="smart-metering.html">Smart metering</a></li>
-                <li><a href="section4.html">Category 1-2</a></li>
-                <li><a href="section5.html">Category 1-3</a></li>
-                <li><a href="section6.html">Category 1-4</a></li>
-                <li><a href="section7.html">Category 1-5</a></li>
-                <li><a href="section8.html">Category 1-6</a></li>
+                
               </ul>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Heating <span class="caret"></span></a>
+              <li id="smart-heating-dw" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Heating <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="geothermal_heating.html">Geothermal Heating</a></li>
                 <li><a href="radiant.html">Radiant Heating</a></li>
@@ -92,21 +89,22 @@
               
               
               
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Cars <span class="caret"></span></a>
+              <li id="smart-car-dw" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Cars <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="electric_cars.html">Electric Cars</a></li>
                 
               </ul>
               
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
+              <li id="ber-dw" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BER <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="ber_advice_for_householders.html">BER Advice For Householders</a></li>
                 <li><a href="ber_questioner_1.html">BER Pre Test</a></li>
                
               </ul>
+              
             </li>
               
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <span class="caret"></span></a>
+              <li id="info-dw" class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="about.html">About AEC</a></li>
                 <li><a href="contact.php">Contact information</a></li>
@@ -119,7 +117,7 @@
               
             </li>
             
-            <li><a href="blog.html">Blog</a></li>
+            <li id="blog-head" ><a href="blog.html">Blog</a></li>
           </ul>
           
           
@@ -128,6 +126,7 @@
            <li><div id="logged-in-user"><script>userDiv()</script></div></li>
            <li id="login-listitem" style="display: block;"> <a href="#login3" data-toggle ="modal"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
             <li><div id="logout"><script>userDiv()</script></div></li>
+            <li><div id="cart"><i class="fa fa-shopping-cart fa-2x "></i></div></li>
 			
              
           </ul>
@@ -139,106 +138,163 @@
 
     <!-- Page Content second container below top nav bar -->
    <div class="container " id ="display-user-in"><p>&nbsp;</p></div> 
-<div class="container"><!-- InstanceBeginEditable name="EditRegion3" --> 
+<div class="container"><!-- InstanceBeginEditable name="EditRegion3" --> <!-- second container below top nav bar   -  -->
 
 		
-        <div class="row">  <!-- First row everything in this row will be top content and read first by search engines  -->
+        <div class="row">  <!-- First row everything in this row will be top content and read first by search engines  -  -->
         
-  <!-- The dreamweaver template editable region is the only area where content can be entered    --> 
-  <!-- edit the template to change other areas of the page      -->     
+  <!--  -- The dreamweaver template editable region is the only area where content can be entered    --  --> 
+  <!--  ------------ edit the template to change other areas of the page      --------------------------   -->     
         
           
           
        
            
-          <div class="col-md-12  col-xl-12 col-sm-12 col-xs-12 "> <!-- start col -->
-            <!-- Start of nine col this div should be first    -->
-  <!-- start content here  -->          
- 
+          <div class="col-md-10 col-md-offset-1   col-xl-10"> <!-- start col -->
+            <!-- Start of nine col this div should be first    --->
+  <!--  - #####################---------- start content here --------------------################# --  -->          
   
-  <div class="hero-unit">
-  <h1>Breezecatcher TS4-200</h1>
-   <p> <a href="img/breezecatcher/TS4-200-rounded-016.jpg" data-gallery><img class=" featured-product-img img-responsive  img-rounded" src="img/breezecatcher/TS4-200-rounded-016.jpg" width="1200" height="675" alt=""/></a> </p></div>
   
-  <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div class=" embed-responsive embed-responsive-16by9">
-  		<iframe class="embed-responsive-item" width="480" height="360" src="http://www.youtube.com/embed/1S716MKQyPc?rel=0"></iframe>
-	</div>
-    </div> 
-    </div> 
-  
-  <div class="col-md-8 col-md-offset-2">
-  <h2>Four arm 180 ft capacity clothesline</h2>
-    <p>The <strong>ULTRA STRONG</strong> TS4-200 dryer has been especially designed to cope with the strong winds of Montana and central north America. It features strong oval profile arms and braces which have an added external reinforcing bracket at the hinge points. The centre mast is reinforced internally by a cross bracing tube which runs the full length of the mast. These enhancements are&nbsp; an addition to the already well proven strength of the central brackets.</p>
-</div>
-
-<div class="col-md-8 col-md-offset-2">
-
- 
-
-		<h2>€135.00 </h2>
-      <h2>Buy now </h2>
-      <p>You will be redirected to PayPal to complete the purchase.</p>      
-      <button type="button" class="btn btn-success">By Now</button>
-    
-    
-<h3 class="style1">4 Arm 180 ft deluxe top spinner rotary clothesline</h3>
-<p>Model TS4-200</p>
-<ul>
-<li>Supplied fully assembled with clothesline cord pre-strung.</li>
-<li>4 arm 180 ft rotary clothesline </li>
-<li>Bright anodised rectangular aluminum arms and braces will not tarnish </li>
-<li>Super strength all aluminum construction with gold colour solid aluminum brackets. </li>
-<li>The lines will not sag </li>
-<li>Will rotate easily in a light breeze even when fully loaded </li>
-<li>Spring action self locking latch </li>
-<li>pvc poly core green clothesline </li>
-<li>supplied with free ground socket 38 mm od (1 1/2 inch od) </li>
-<li>Will fold and can be stored away when not in use </li>
-<li>Longest top line span 2.3 meters (7ft 4inch) </li>
-<li>Rotating diameter 3.3 meters (10ft 8inch) </li>
-<li>Center mast 34 mm (1 3/8 inch)</li>
-</ul>
-<p>&nbsp;</p>
-
-<p>You will be redirected to PayPal to complete the purchase.</p>      
-      <button type="button" class="btn btn-success">By Now</button>
-      <p>&nbsp;</p>
-    </div>
-
-
-
-<div class="row">
- <div class="col-md-8 col-md-offset-2">
-                        <div class="thumbnail">
-                          <div class="caption">
-                    <h4 class="pull-right">&nbsp;</h4>
-                    <h4><a href="reviews.html">See more reviews here</a></h4>
-                    <p>It is everything you have advertised and more. We couldn't be any more satisfied with our clothes line! ....</p>
+           
+            <div class="row carousel-holder">
+              <div class="col-md-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+                    
+                    
+                    
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="item active"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (1).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (2).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (3).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (4).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (5).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (6).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (7).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (8).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (9).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (10).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (11).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (12).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (13).jpg"  alt=""></div>
+                    <div class="item"> <img class="slide-image" src="img/clotheline/breezecatcher-TS4-200 (14).jpg"  alt=""></div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+              </div>
+            </div>
+            <div class="row">
+            
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/200ft-clothesline-TS4-200-017.jpg" width="1024" height="768" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$135.00</h4>
+                    <h4><a href="clothesline-200.html">Buy </a></h4>
+                    <p>Buy this item <a target="_self" href="clothesline-200.html">clothesline TS4-200 </a>.</p>
                   </div>
                   <div class="ratings">
-                    <p class="pull-right">15 reviews</p>
+                    <p class="pull-right">115 reviews</p>
                     <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span></p>
                   </div>
-        </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/TS4-140-Rotary-clothesline-1900-017.jpg" width="1920" height="1080" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$164.99</h4>
+                    <h4><a href="#">Clothesline 140ft</a></h4>
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="ratings">
+                    <p class="pull-right">212 reviews</p>
+                    <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/rotary-clothesline-1280.jpg" width="1280" height="1024" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$174.99</h4>
+                    <h4><a href="#">Clothesline 120ft</a></h4>
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="ratings">
+                    <p class="pull-right">131 reviews</p>
+                    <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/Rotary-clothesline-HD4-270-1900-004.jpg" width="1200" height="675" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$184.99</h4>
+                    <h4><a href="#">Clothesline 250ft</a></h4>
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="ratings">
+                    <p class="pull-right">176 reviews</p>
+                    <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/parallel-clothesline-alu-032.jpg" width="1024" height="768" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$194.99</h4>
+                    <h4><a href="#">Clothesline 272ft</a></h4>
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="ratings">
+                    <p class="pull-right">336 reviews</p>
+                    <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span></p>
+                  </div>
+                </div>
+              </div>
+               <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail"><img src="img/breezecatcher/outdoor-clothesline-parallel-1k-1.jpg" width="1024" height="576" alt=""/>
+                  <div class="caption">
+                    <h4 class="pull-right">$194.99</h4>
+                    <h4><a href="#">Fifth Product</a></h4>
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="ratings">
+                    <p class="pull-right">218 reviews</p>
+                    <p> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span></p>
+                  </div>
+                </div>
+              </div>
             </div>
-    </div>
-    
-    
-    
-    
-    </div>
-
-    
-   
-    
-  </div>
+   <!--  - #####################--------- end content here --------------------################# --  -->          
+            
+          </div> <!-- end  col-md-12 col-xl-8 -->
+         
+          <!-- end of col-md-9   --->
+        
+        
+        
+        
+        
+            
            
-  
+            
+            
 
-
-  </div>  <!-- end of First row   -->
+        </div>  <!-- end of First row   -  -->
  
     <!-- InstanceEndEditable --></div>
     <!-- /.container- -->
@@ -442,6 +498,15 @@
 </div><!-- /.modal -->
 
 <!-- InstanceBeginEditable name="javascriptArea" -->
+<script>
+
+$( document ).ready(function() {
+	$( "#shop-dw" ).addClass( "link-active" );
+    
+});
+
+</script>
+
 
 
 

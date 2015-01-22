@@ -22,9 +22,51 @@ function  on_load_zeroMeter(){
 		
 		}
 	
-	
+	resultToDiv()// check results if survey is complete write results to the div area.
 	
 	}// end of on_load_zeroMeter()
+	
+	
+function resultToDiv(){
+	
+	
+	if(typeof sessionStorage.poor == "undefined"){
+		document.getElementById("poor_result_page").innerHTML = "Please complete the questioner to get results "
+		//sessionStorage.poor = 0
+		}
+		
+	if(typeof sessionStorage.fair == "undefined"){
+		document.getElementById("fair_result_page").innerHTML = "Please complete the questioner to get results "
+		sessionStorage.fair = 0
+		}	
+		
+	if(typeof sessionStorage.good == "undefined"){
+		document.getElementById("good_result_page").innerHTML = "Please complete the questioner to get results "
+		sessionStorage.good = 0
+		}	
+		
+	if(typeof sessionStorage.exec == "undefined"){
+		document.getElementById("exec_result_page").innerHTML = "Please complete the questioner to get results "
+		sessionStorage.exec = 0
+		}	
+		
+	
+		
+	if(typeof sessionStorage.dna == "undefined"){
+		document.getElementById("dna_result_page").innerHTML = "Please complete the questioner to get results "
+		sessionStorage.dna = 100
+		}
+		
+					
+	document.getElementById("poor_result_page").innerHTML = ""+sessionStorage.poor+"% of your answers were in the POOR segment. "
+	document.getElementById("fair_result_page").innerHTML = ""+sessionStorage.fair+"% of your answers were in the FAIR segment. "
+	document.getElementById("good_result_page").innerHTML = ""+sessionStorage.good+"% of your answers were in the GOOD segment. "
+	document.getElementById("exec_result_page").innerHTML = ""+sessionStorage.exec+"% of your answers were in the EXECELLENT segment. "
+	document.getElementById("dna_result_page").innerHTML = ""+sessionStorage.dna+"% of your answers did not apply. "
+	
+	}
+	
+		
 							
 function setM(v){ //v is a value supplied by the calling function -- a variable called meter (0 - 15)
 									
@@ -468,34 +510,18 @@ function roofInsul(){
 
 function on_load_form_read() {
 	
-	if(typeof sessionStorage.q1 == "undefined"){
-		
-	sessionStorage.q1 = ""
-	}
-	
-	if(typeof sessionStorage.q2 == "undefined"){
-		
-	sessionStorage.q2 = ""
-	}
-	if(typeof sessionStorage.q3 == "undefined"){
-		
-	sessionStorage.q3 = ""
-	}
-	
-	if(typeof sessionStorage.q4 == "undefined"){
-		
-	sessionStorage.q4 = ""
-	}
-	if(typeof sessionStorage.q5 == "undefined"){
-		
-	sessionStorage.q5 = ""
-	}
-	if(typeof sessionStorage.q6 == "undefined"){
-		
-	sessionStorage.q6 = ""
-	}
-	
-	
+	if(typeof sessionStorage.q1 == "undefined"){sessionStorage.q1 = ""}
+
+	if(typeof sessionStorage.q2 == "undefined"){sessionStorage.q2 = ""}
+
+	if(typeof sessionStorage.q3 == "undefined"){sessionStorage.q3 = ""}
+
+	if(typeof sessionStorage.q4 == "undefined"){sessionStorage.q4 = ""}
+
+	if(typeof sessionStorage.q5 == "undefined"){sessionStorage.q5 = ""}
+
+	if(typeof sessionStorage.q6 == "undefined"){sessionStorage.q6 = ""}
+
 	
 	var areaOption = document.getElementById("q1");// event listener for meter survey area
 	 
@@ -538,11 +564,7 @@ function on_load_form_read() {
 	if(numboffloorsOption.addEventListener){
     numboffloorsOption.addEventListener("change", numboffloors );
 	};
-	   
-	   
-	
-	   
-	   
+
    
    
 };// on_load_form_read
@@ -551,36 +573,22 @@ function on_load_form_read() {
 	
 function on_load_form_p2_read(){
 	
-	if(typeof sessionStorage.q7 == "undefined"){
-		
-	sessionStorage.q7 = ""
-	}
+	if(typeof sessionStorage.q7 == "undefined"){sessionStorage.q7 = ""}
 	
-	if(typeof sessionStorage.q8 == "undefined"){
+	if(typeof sessionStorage.q8 == "undefined"){sessionStorage.q8 = ""}
+
+	if(typeof sessionStorage.q9 == "undefined"){sessionStorage.q9 = ""}
+
+	if(typeof sessionStorage.q10 == "undefined"){sessionStorage.q10 = ""}
+
+	if(typeof sessionStorage.q11 == "undefined"){sessionStorage.q11 = ""}
+
+	if(typeof sessionStorage.q12 == "undefined"){sessionStorage.q12 = ""}
+
+	if(typeof sessionStorage.q13 == "undefined"){sessionStorage.q13 = ""}
 		
-	sessionStorage.q8 = ""
-	}
-	if(typeof sessionStorage.q9 == "undefined"){
-		
-	sessionStorage.q9 = ""
-	}
 	
-	if(typeof sessionStorage.q10 == "undefined"){
-		
-	sessionStorage.q10 = ""
-	}
-	if(typeof sessionStorage.q11 == "undefined"){
-		
-	sessionStorage.q11 = ""
-	}
-	if(typeof sessionStorage.q12 == "undefined"){
-		
-	sessionStorage.q12 = ""
-	}
-	if(typeof sessionStorage.q13 == "undefined"){
-		
-	sessionStorage.q13 = ""
-	}
+	
 	
 
 // conservatory
@@ -704,38 +712,20 @@ function canYouUseControl(){
 function on_load_form_p3_read(){
 	
 	
-	if(typeof sessionStorage.q14 == "undefined"){
-		
-	sessionStorage.q14 = ""
-	}
-	
-	if(typeof sessionStorage.q15 == "undefined"){
-		
-	sessionStorage.q15 = ""
-	}
-	if(typeof sessionStorage.q16 == "undefined"){
-		
-	sessionStorage.q16 = ""
-	}
-	
-	if(typeof sessionStorage.q17 == "undefined"){
-		
-	sessionStorage.q17 = ""
-	}
-	if(typeof sessionStorage.q18 == "undefined"){
-		
-	sessionStorage.q18 = ""
-	}
-	if(typeof sessionStorage.q19 == "undefined"){
-		
-	sessionStorage.q19 = ""
-	}
-	if(typeof sessionStorage.q20 == "undefined"){
-		
-	sessionStorage.q20 = ""
-	}
-	
-	
+	if(typeof sessionStorage.q14 == "undefined"){sessionStorage.q14 = ""}
+
+	if(typeof sessionStorage.q15 == "undefined"){sessionStorage.q15 = ""}
+
+	if(typeof sessionStorage.q16 == "undefined"){sessionStorage.q16 = ""}
+
+	if(typeof sessionStorage.q17 == "undefined"){sessionStorage.q17 = ""}
+
+	if(typeof sessionStorage.q18 == "undefined"){sessionStorage.q18 = ""}
+
+	if(typeof sessionStorage.q19 == "undefined"){sessionStorage.q19 = ""}
+
+	if(typeof sessionStorage.q20 == "undefined"){sessionStorage.q20 = ""}
+
 	
 		
 //sourceOfHeat
@@ -846,39 +836,20 @@ function cylinderInsulType(){
 function on_load_form_p4_read(){
 	
 	//waterHeater
-	if(typeof sessionStorage.q21 == "undefined"){
-		
-	sessionStorage.q21 = ""
-	}
+	if(typeof sessionStorage.q21 == "undefined"){sessionStorage.q21 = ""}
+
+	if(typeof sessionStorage.q22 == "undefined"){sessionStorage.q22 = ""}
 	
-	if(typeof sessionStorage.q22 == "undefined"){
-		
-	sessionStorage.q22 = ""
-	}
-	if(typeof sessionStorage.q23 == "undefined"){
-		
-	sessionStorage.q23 = ""
-	}
-	
-	if(typeof sessionStorage.q24 == "undefined"){
-		
-	sessionStorage.q24 = ""
-	}
-	if(typeof sessionStorage.q25 == "undefined"){
-		
-	sessionStorage.q25 = ""
-	}
-	if(typeof sessionStorage.q26 == "undefined"){
-		
-	sessionStorage.q26 = ""
-	}
-	if(typeof sessionStorage.q27 == "undefined"){
-		
-	sessionStorage.q27 = ""
-	}
-	
-	
-	
+	if(typeof sessionStorage.q23 == "undefined"){sessionStorage.q23 = ""}
+
+	if(typeof sessionStorage.q24 == "undefined"){sessionStorage.q24 = ""}
+
+	if(typeof sessionStorage.q25 == "undefined"){sessionStorage.q25 = ""}
+
+	if(typeof sessionStorage.q26 == "undefined"){sessionStorage.q26 = ""}
+
+	if(typeof sessionStorage.q27 == "undefined"){sessionStorage.q27 = ""}
+
 	
 	var waterHeaterOption = document.getElementById("waterHeater");// event listener for meter survey area
 	 
@@ -961,24 +932,12 @@ function windTurbine(){
 function on_load_form_p5_read(){
 	
 	
-	if(typeof sessionStorage.q28 == "undefined"){
+	if(typeof sessionStorage.q28 == "undefined"){sessionStorage.q28 = ""}
+	
+	if(typeof sessionStorage.q29 == "undefined"){sessionStorage.q29 = ""}
+	
+	if(typeof sessionStorage.q30 == "undefined"){sessionStorage.q30 = ""}
 		
-	sessionStorage.q28 = ""
-	}
-	
-	if(typeof sessionStorage.q29 == "undefined"){
-		
-	sessionStorage.q29 = ""
-	}
-	if(typeof sessionStorage.q30 == "undefined"){
-		
-	sessionStorage.q30 = ""
-	}
-	
-	
-	
-	
-	
 	
 	//hotWaterSolar
 	var hotWaterSolarOption = document.getElementById("hotWaterSolar");// event listener for meter survey area
@@ -1063,42 +1022,21 @@ function boilKettle(){
 function on_load_form_p6_read(){
 	
 	
-	if(typeof sessionStorage.q31 == "undefined"){
+	if(typeof sessionStorage.q31 == "undefined"){sessionStorage.q31 = ""}
+	
+	if(typeof sessionStorage.q32 == "undefined"){sessionStorage.q32 = ""}
+	
+	if(typeof sessionStorage.q33 == "undefined"){sessionStorage.q33 = ""}
+	
+	if(typeof sessionStorage.q34 == "undefined"){sessionStorage.q34 = ""}
+	
+	if(typeof sessionStorage.q35 == "undefined"){sessionStorage.q35 = ""}
+	
+	if(typeof sessionStorage.q36 == "undefined"){sessionStorage.q36 = ""}
+	
+	if(typeof sessionStorage.q37 == "undefined"){sessionStorage.q37 = ""}
 		
-	sessionStorage.q31 = ""
-	}
-	
-	if(typeof sessionStorage.q32 == "undefined"){
-		
-	sessionStorage.q32 = ""
-	}
-	if(typeof sessionStorage.q33 == "undefined"){
-		
-	sessionStorage.q33 = ""
-	}
-	
-	if(typeof sessionStorage.q34 == "undefined"){
-		
-	sessionStorage.q34 = ""
-	}
-	if(typeof sessionStorage.q35 == "undefined"){
-		
-	sessionStorage.q35 = ""
-	}
-	if(typeof sessionStorage.q36 == "undefined"){
-		
-	sessionStorage.q36 = ""
-	}
-	if(typeof sessionStorage.q37 == "undefined"){
-		
-	sessionStorage.q37 = ""
-	}
-	
-	
-	
-	
-	
-	
+
 	
 	// singleOrDualMeter
 	var singleOrDualMeterOption = document.getElementById("singleOrDualMeter");// event listener for meter survey area
@@ -1168,7 +1106,7 @@ function collectPage1(){
 		else if (!sessionStorage.q4){document.getElementById("ber_1").innerHTML = "<h3>When was your house built.</h3> "}
 		else if (!sessionStorage.q5){document.getElementById("ber_1").innerHTML = "<h3>How many rooms does your home have.</h3> "}
 		else if (!sessionStorage.q6){document.getElementById("ber_1").innerHTML = "<h3>How many floors does your home have.</h3> "} 
-		else{alert(" Here ")}
+		else{}
 		
 		}
 		
@@ -1198,7 +1136,7 @@ function collectPage2(){
 		else if (!sessionStorage.q11){document.getElementById("ber_2").innerHTML = "<h3>How are the main walls of your house constructed.</h3> "}
 		else if (!sessionStorage.q12){document.getElementById("ber_2").innerHTML = "<h3>What type of roof does your home have.</h3> "}
 		else if (!sessionStorage.q13){document.getElementById("ber_2").innerHTML = "<h3>How is your roof insulated.</h3> "}
-		else{alert(" Here page two")}
+		else{}
 		
 		}
 		
@@ -1224,7 +1162,7 @@ function collectPage3(){
 		else if (!sessionStorage.q18){document.getElementById("ber_3").innerHTML = "<h3>Is your boiler maintainer and serviced regularly.</h3> "}
 		else if (!sessionStorage.q19){document.getElementById("ber_3").innerHTML = "<h3>What heating controls do you have.</h3> "}
 		else if (!sessionStorage.q20){document.getElementById("ber_3").innerHTML = "<h3>Do you know how to control your heating.</h3> "} 
-		else{alert(" Here page three")}
+		else{}
 		
 		}
 		
@@ -1251,7 +1189,7 @@ function collectPage4(){
 		else if (!sessionStorage.q25){document.getElementById("ber_4").innerHTML = "<h3>How large is your hot water cylinder.</h3> "}
 		else if (!sessionStorage.q26){document.getElementById("ber_4").innerHTML = "<h3>Is there a thermostat for the cylinder.</h3> "}
 		else if (!sessionStorage.q27){document.getElementById("ber_4").innerHTML = "<h3>Is the cylinder insulated and if so how thick is the insulation.</h3> "}
-		else{alert(" Here page three")}
+		else{}
 		
 		}
 		
@@ -1276,7 +1214,7 @@ function collectPage5(){
 		else if (!sessionStorage.q29){document.getElementById("ber_5").innerHTML = "<h3>Do you have photovoltaic PV panels for generating electricity..</h3> "}
 		else if (!sessionStorage.q30){document.getElementById("ber_5").innerHTML = "<h3>Do you have a wind turbine for generating electricity.</h3> "}//{alert("") }
 		
-		else{alert(" Here page three")}
+		else{}
 		
 		}
 		
@@ -1290,11 +1228,6 @@ function collectPage5(){
 	
 	}// end of collectPage5() 
 
-
-
-
-
-
 function collectPage6(){
 	
 	
@@ -1307,7 +1240,7 @@ function collectPage6(){
 		else if (!sessionStorage.q35){document.getElementById("ber_6").innerHTML = "<h3>Are any of your appliances reguarly left switched on.</h3> "}
 		else if (!sessionStorage.q36){document.getElementById("ber_6").innerHTML = "<h3>Do you dry most of your clothes in a tumble dryer.</h3> "}
 		else if (!sessionStorage.q37){document.getElementById("ber_6").innerHTML = "<h3>Do you only boil the water you need when you boil the kettle.</h3> "}//{alert("") }
-		else{alert(" Here page three")}
+		else{}
 		 
 		}
 		
@@ -1324,85 +1257,109 @@ function collectPage6(){
 	}// end of collectPage6() 
 
 
-function getMeterValue(){
+function getMeterValue(){// use the grade from each question to put a value on the meter
 
-var zeros = 0	
-var poor = 0
-var fair = 0
-var good = 0
-var exec = 0
-var trap = 0
-var countQ = 0	
-var meterValue = 0	
+var zeros = 0;	
+var poor = 0;
+var fair = 0;
+var good = 0;
+var exec = 0;
+var trap = 0;
+var countQ = 0;
+var poorPerCent = ((poor/37)*100);
+var fairPerCent = ((fair/37)*100);
+var goodPerCent = ((good/37)*100);
+var execPerCent = ((exec/37)*100);
+var base = 0;
+var sur = 0;
+var meterValue = 0;	
 	
 	
-	for(var i=1; i<38; i++){
+	for(var i=1; i<38; i++){// cycle through all answers and sort by grade 0 - 4
 		
-		countQ++
+		// soret each question into a sector on the meter and count the number of times each sector was chosen
+		if(sessionStorage.getItem("q"+i) == 0){zeros++;}
 		
-		if(sessionStorage.getItem("q"+i) == 0){
-			
-			zeros++;
-			
-			}
-		else if (sessionStorage.getItem("q"+i) == 1){	
-			
-			poor++;
-			
+		else if (sessionStorage.getItem("q"+i) == 1){poor++;}	
+		
+		else if (sessionStorage.getItem("q"+i) == 2){fair++;}	
+		
+		else if (sessionStorage.getItem("q"+i) == 3){good++;}	
+		
+		else if (sessionStorage.getItem("q"+i) == 4){exec++;}	
+		
+		else{ trap++}
+		
+		}// end of loop
+		
+		bestSector()// call 
+		
+
+		
+function bestSector(){ // Decide which sector got the highest number of secections
+	
+	// convert the score for each sector and see what percentage of the questions selected it
+	poorPerCent = parseInt(((poor/37)*100).toFixed(0)); 
+	fairPerCent = parseInt(((fair/37)*100).toFixed(0));
+	goodPerCent = parseInt(((good/37)*100).toFixed(0));
+	execPerCent = parseInt(((exec/37)*100).toFixed(0));
+	//alert(typeof execPerCent)
+	dnaPerCent = (100-(poorPerCent + fairPerCent + goodPerCent + execPerCent));
+	 
+	
+	sessionStorage.poor = poorPerCent;
+	sessionStorage.fair = fairPerCent;
+	sessionStorage.good = goodPerCent;
+	sessionStorage.exec = execPerCent;
+	sessionStorage.dna = dnaPerCent;
+		
+	var best = Math.max(poorPerCent, fairPerCent, goodPerCent, execPerCent);  // returns the highest percentage
+	
+	// Get the name of the sector and use that as the starting point.
+	// The meter score is 0 - 15, a base value will be used to set the meter at the lowest score in that sector
+	// then add a value between 0 - 3 depending on the overall percentage that sector received.
+	
+	if(best == execPerCent ){base = 11}// if the higest percentage was grade 4
+	else if(best == goodPerCent ){base = 8}// if the higest percentage was grade 3
+	else if(best == fairPerCent){base = 4}// if the higest percentage was grade 2
+	else if(best == poorPerCent){base = 1}// if the higest percentage was grade 1
+	else{alert("No Match")}
+	
+	// Now use the overall percentage to get a value from 0  - 3 which will be added to the base score
+	// this will decide the score range within the sector
+	
+	if(base == 11 || base == 8){// on the high side of the meter a higher percentage means better results so we add the sur to the base
+	// higher percentage means higher sur value
+	if(best >= 75){sur = 3;}
+	else if(best >= 50){sur = 2;}
+	else if(best >= 40){sur = 1;}
+	else if(best >= 30){sur = 0;}
+	else{sur = -1;}
+	
+	}else if (base == 4 || base == 1){// on the low side of the meter a higher percentage means worse results so we reverse the value of sur 
+	// higher percentage means lower sur value	
+		if(best >= 75){sur = 0;}
+		else if(best >= 50){sur = 1;}
+		else if(best >= 25){sur = 2;}
+		else{sur = 3;}
+	
 		}
-		else if (sessionStorage.getItem("q"+i) == 2){	
-			
-			fair++;
-			
-		}	
-		else if (sessionStorage.getItem("q"+i) == 3){	
-			
-			good++;
-			
-		}	
-		else if (sessionStorage.getItem("q"+i) == 4){	
-			
-			exec++;
-			
-			
-		}	
-		else{ trap++
-			
-			alert(i)
+	else{
 		
-			}
-		
-		
-		}// end of if
+		}// end if 
 	
 	
-//	alert("Number of Zeros is   "+zeros+"\nNumber of Poor is   "+poor+"\nNumber of Fair is   "+fair+"\nNumber of Good is   "+good+"\nNumber of Execellent is   "+exec+"\nNumber of Questions is   "+countQ+ "\nNumber of Traps is   "+trap+ "\n" )
+	sessionStorage.meterValue = base+sur; // add the base value (sector with highest percentage) to the sur value (use percentage to calculate this value)
+	
+	//alert("Base = "+base+"\n sur = "+sur)
+	window.open("ber_questioner_result.html", "_self");
+	//return base+sur;
+	
+	}// end of bestSector()		
 	
 	
-	if (exec >= 34){
-				
-				sessionStorage.meterValue = 14
-				window.open("ber_questioner_result.html", "_self");
-			}
-	else if (exec >= 30){
-				
-				sessionStorage.meterValue = 13
-				window.open("ber_questioner_result.html", "_self");
-			}
-	else if (exec >= 28){
-				
-				sessionStorage.meterValue = 12
-				window.open("ber_questioner_result.html", "_self");
-			}
-	else if (exec >= 24){
-				
-				sessionStorage.meterValue = 11
-				window.open("ber_questioner_result.html", "_self");
-			}else{
-				sessionStorage.meterValue = 8
-				window.open("ber_questioner_result.html", "_self");
-				
-				}
 	
 	
-	} // end of if (exec >= 25)
+	
+	
+	}
