@@ -2322,6 +2322,9 @@ display: block;
 	background-color: #DFDFDF;
 	width: auto;
 	height: auto;
-	border-radius: 30px;
+	border-radius: 10px;
 	border: thin solid #DFDFDF;
+	}
+.nooverflow {
+	overflow-x: hidden;
 	}
