@@ -165,6 +165,21 @@
          
         </div>
         
+        <div id="button-div" class="hide-control">
+        <div id="onBtn" class="col-sm-12 col-md-3 col-md-offset-3">
+        
+        <button style = "width: 100%;"   id = "show-control-btn" type="button" class="btn btn-success carbon-meter "> Show controls </button>
+        
+        </div>
+        
+         <div id="offBtn" class="col-sm-12 col-md-3 ">
+        
+        <button style = "width: 100%;"  id = "hide-control-btn" type="button" class="btn btn-danger carbon-meter"> Hide controls </button>
+        
+        </div>
+        
+        
+        <div id="meter-control" class="hide-control">
         
          <div class="col-sm-12 col-md-3 col-md-offset-3">
         <form id="carbonM" name="carbonM" >
@@ -222,8 +237,29 @@
         
         </div>
         
+        </div><!-- end meter-control   -->
+        </div>
         
+         
 
+
+<script> 
+//	on / off control on the BER meter result page
+       
+        $("#show-control-btn").click(function(){
+			//alert("Show control")
+  		$("#meter-control").addClass("show-control").removeClass("hide-control");
+}); 
+
+ $("#hide-control-btn").click(function(){
+			//alert("Hide control")
+  		$("#meter-control").addClass("hide-control").removeClass("show-control");
+		
+}); 	
+	
+
+
+</script> 
          <!-- end of First row   -->
          
  <!-- InstanceEndEditable --></div>
@@ -433,7 +469,7 @@
     window.onload = on_load_zeroMeter();
 	$( document ).ready(function() {
 	$( "#ber-dw" ).addClass( "link-active" );
-    
+	
 });
            
 </script>

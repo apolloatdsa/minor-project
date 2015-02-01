@@ -2328,3 +2328,14 @@ display: block;
 .nooverflow {
 	overflow-x: hidden;
 	}
+#meter-control {
+		
+	}
+.show-control{
+	display: inline;
+	
+	}
+.hide-control{
+	display: none;
+	
+	}

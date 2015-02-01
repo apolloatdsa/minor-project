@@ -22,10 +22,25 @@ function  on_load_zeroMeter(){
 		
 		}
 	
-	resultToDiv()// check results if survey is complete write results to the div area.
-	
+	resultToDiv();// check results if survey is complete write results to the div area.
+	checkUserLoggedIn();
 	}// end of on_load_zeroMeter()
 	
+	
+function checkUserLoggedIn(){ // meter controls on the BER results page show or hide depends on user loged in or not
+		
+		if (sessionStorage.userIsLoggedIn == "true"){
+			
+			$("#button-div").addClass("show-control").removeClass("hide-control"); // show the controls	
+			
+			}else{
+				$("#button-div").removeClass("show-control").addClass("hide-control"); // hide controls 
+				
+				}
+		
+		
+		
+		};	
 	
 function resultToDiv(){
 	
@@ -213,7 +228,7 @@ function createAccBtn(){
 	document.getElementById("logout").innerHTML = '<a href="#login2" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Logout</a>';
 	document.getElementById('login-listitem').style.display = "none";// turn off login link
 	sessionStorage.userIsLoggedIn = true;
-			 
+	$("#button-div").addClass("show-control").removeClass("hide-control");		 
 	};
 	 
 	}// end of userDiv()
@@ -238,6 +253,7 @@ function logOut(){
 	document.getElementById("logged-in-user").innerHTML = "";
 	document.getElementById("logout").innerHTML = '<a href="#login" data-toggle ="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a>';
 	document.getElementById('login-listitem').style.display = "block";// turn on the login link
+	$("#button-div").removeClass("show-control").addClass("hide-control");
 	//document.getElementById("display-user-in").innerHTML = "<h4>Please login</h4>";
 	};  // end of logOut()
 	 
@@ -333,7 +349,7 @@ function signupBtn(){
 	
 	document.getElementById("display-user-in").innerHTML = "<h4>Welcome "+sessionStorage.userIs+"</h4>";
 	sessionStorage.userIsLoggedIn = true;
-
+	$("#button-div").addClass("show-control").removeClass("hide-control");
 	}
 
 function signupEm(){
@@ -1355,11 +1371,8 @@ function bestSector(){ // Decide which sector got the highest number of secectio
 	window.open("ber_questioner_result.html", "_self");
 	//return base+sur;
 	
-	}// end of bestSector()		
-	
-	
-	
-	
-	
+	}// end of bestSector()
+			
+
 	
 	}
