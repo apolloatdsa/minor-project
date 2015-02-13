@@ -2339,3 +2339,22 @@ display: block;
 	display: none;
 	
 	}
+.testBox {
+	width: 200px;
+	height: 200px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border: medium solid #FF0000;
+	background-color: #FFED00;	
+	}
+	
+.highlight {
+	background-color: #B45D5A;	
+	
+	}

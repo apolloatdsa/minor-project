@@ -42,7 +42,9 @@ function checkUserLoggedIn(){ // meter controls on the BER results page show or 
 		
 		};	
 	
-function resultToDiv(){
+function resultToDiv(){ // five divs under meter
+
+
 	
 	
 	if(typeof sessionStorage.poor == "undefined"){
@@ -64,12 +66,22 @@ function resultToDiv(){
 		document.getElementById("exec_result_page").innerHTML = "Please complete the questioner to get results "
 		sessionStorage.exec = 0
 		}	
-		
-	
-		
+
 	if(typeof sessionStorage.dna == "undefined"){
 		document.getElementById("dna_result_page").innerHTML = "Please complete the questioner to get results "
 		sessionStorage.dna = 100
+		}
+	
+	// added when it was noticed on some BER results the Did Not Apply result displayed as -1 
+	if (sessionStorage.poor + sessionStorage.fair + sessionStorage.good + sessionStorage.exec + sessionStorage.dan > 100 ){
+		
+		var maxValue = Math.max(sessionStorage.poor + sessionStorage.fair + sessionStorage.good + sessionStorage.exec + sessionStorage.dna)
+		sessionStorage.dna = 0;
+		if(sessionStorage.exec == maxValue){sessionStorage.exec--}
+		 else if  (sessionStorage.good == maxValue){sessionStorage.good--}
+		else if (sessionStorage.fair == maxValue){sessionStorage.fair--}
+		else if (sessionStorage.poor == maxValue){sessionStorage.poor--};
+		
 		}
 		
 					
@@ -141,25 +153,20 @@ function decreaseMeter(){
 
 function on_load_login(){// add event listener
 
-    var loginButton = document.getElementById("login-btn");// event listener for range slider
+    var loginButton = document.getElementById("login-btn");// event listener for login button
 	 
 	if(loginButton.addEventListener){
     loginButton.addEventListener("click", readLogin );
    
    };
    
-   var createAccBtnButton = document.getElementById("createAccBtn");// event listener for range slider
+   var createAccBtnButton = document.getElementById("createAccBtn");// event listener for login button
 	 
 	if(createAccBtnButton.addEventListener){
     createAccBtnButton.addEventListener("click", createAccBtn );
    
    };
-  
-	
 
-   
-   
-	
 	};// end on_load_login() function
 	
 function createAccBtn(){
@@ -232,8 +239,7 @@ function createAccBtn(){
 	};
 	 
 	}// end of userDiv()
-	
-	 
+ 
 	 
 function on_load_logout(){
 	
@@ -257,10 +263,6 @@ function logOut(){
 	//document.getElementById("display-user-in").innerHTML = "<h4>Please login</h4>";
 	};  // end of logOut()
 	 
-
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sign up
@@ -333,8 +335,6 @@ function on_load_signup(){
      signupAddCountryEntry.addEventListener("change", signupAddCountry );
    };
 
-	
-	
 	}// end of on_load_signup()
 
 
@@ -413,11 +413,8 @@ function signupAddCountry(){
 
 var result = 0;
 
-
 function showResult(){
-	
-	
-	
+
 	}// end of show Result function 
 	
 
@@ -463,10 +460,7 @@ function numboffloors(){
 	
 	}// numboffloors 6
 	
-	
 
-	
-	
 //########## page 1 ######################################	
 	
 
@@ -516,10 +510,6 @@ function roofInsul(){
 	sessionStorage.q13 = document.getElementById("roofInsul").value; // read the option value
 
 	} // 13
-
-
-
-
 
 
 //// ########################## emd  page 2 ##########################
@@ -942,9 +932,6 @@ function windTurbine(){
 	} // 30
 
 
-
-	
-
 function on_load_form_p5_read(){
 	
 	
@@ -1310,7 +1297,7 @@ var meterValue = 0;
 		
 		bestSector()// call 
 		
-
+ 
 		
 function bestSector(){ // Decide which sector got the highest number of secections
 	
@@ -1320,7 +1307,18 @@ function bestSector(){ // Decide which sector got the highest number of secectio
 	goodPerCent = parseInt(((good/37)*100).toFixed(0));
 	execPerCent = parseInt(((exec/37)*100).toFixed(0));
 	//alert(typeof execPerCent)
+	
+	if((poorPerCent + fairPerCent + goodPerCent + execPerCent) <= 99){
+	
 	dnaPerCent = (100-(poorPerCent + fairPerCent + goodPerCent + execPerCent));
+	
+	
+	 }
+	 
+	 else{
+		 		 dnaPerCent = 0;
+		 
+		 };
 	 
 	
 	sessionStorage.poor = poorPerCent;
@@ -1368,11 +1366,15 @@ function bestSector(){ // Decide which sector got the highest number of secectio
 	sessionStorage.meterValue = base+sur; // add the base value (sector with highest percentage) to the sur value (use percentage to calculate this value)
 	
 	//alert("Base = "+base+"\n sur = "+sur)
-	window.open("ber_questioner_result.html", "_self");
+	window.open("ber_questioner_result.html", "_self");// when the page opens it will use setMeter() function to display the value 
 	//return base+sur;
 	
 	}// end of bestSector()
-			
+
+
+	}// end of if if(base == 11 || base == 8)
+	
+
 
 	
-	}
+	
