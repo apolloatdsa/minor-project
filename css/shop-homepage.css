@@ -2358,3 +2358,15 @@ display: block;
 	background-color: #B45D5A;	
 	
 	}
+	
+.survey_active {
+	background-color: #99BAD5;
+	border-radius: 5px;
+	border: thin solid  #0A548F;
+	}
+.well {
+	
+	transition: all 1.0s ease-in-out;
+	
+	
+	}

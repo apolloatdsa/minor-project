@@ -1,14 +1,14 @@
 //Code reuse
-// Ref: http://www.site.com/page#ref
+// Ref: 
 // Ref: Book Title, Author, Publisher, Edition, page number
 
 // Ref: Code provided by lab assistant: name or fellow participant: 
 
-
-
 // JavaScript Document
 
 // carbon meter
+
+
 
 function  on_load_zeroMeter(){
 	
@@ -138,13 +138,6 @@ function decreaseMeter(){
 									
 									
 	}	
-									
-		
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////									
-	
-	
-	
 	
 //////////////////////////////////////////////////////////////////////////////////////////////
 // The login uses HTML 5 session storage to store the user login. It looks for an email and 
@@ -195,8 +188,6 @@ function createAccBtn(){
 	};
 	
 	}; // Create an account createAccBtn() function
-
-
 
 
  function readLogin(){// reads the login model user email and name
@@ -1376,5 +1367,8 @@ function bestSector(){ // Decide which sector got the highest number of secectio
 	
 
 
+
+
+/// end of code
 	
 	
